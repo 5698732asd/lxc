@@ -76,6 +76,21 @@ $(document).ready(function(){
                 menuBar.width(0); // Thu gọn
             }
 		});
+
+		$(".solution-product").hover(function () {
+			let newGroup = $(this).attr("group");
+			let newTitle = $(this).attr("title");
+			let newDesc = $(this).attr("desc");
+
+			$(".group-target, .title-target, .desc-target").addClass("fade"); // Làm mờ trước khi đổi text
+			
+			setTimeout(() => {
+				$(".group-target").text(newGroup);
+				$(".title-target").text(newTitle);
+				$(".desc-target").text(newDesc);
+				$(".group-target, .title-target, .desc-target").removeClass("fade"); // Hiện lại sau khi đổi text
+			}, 300); // Đợi 200ms trước khi đổi nội dung
+		});
 	});
 	
 	$('.centered-slide').slick({
@@ -89,7 +104,8 @@ $(document).ready(function(){
 		  {
 			breakpoint: 768,
 			settings: {
-			  arrows: false,
+				arrows: false,
+				autoplay: true,
 			  centerMode: true,
 			  centerPadding: '40px',
 			  slidesToShow: 1
@@ -97,5 +113,43 @@ $(document).ready(function(){
 		  }
 		]
 	});
+
+	$('.partner-slide').slick({
+		variableWidth: true,
+        autoplaySpeed: 0,
+        speed: 15000,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+		infinite: true,
+		slidesToShow: 6,
+		autoplay: true,
+		slidesToScroll: 4,
+		responsive: [
+		  {
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 4,
+			  slidesToScroll: 3,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 600,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 2
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 1,
+			  slidesToScroll: 1
+			}
+		  }
+		]
+	  });
 	
 });
