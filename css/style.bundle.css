@@ -33,7 +33,8 @@
   --bs-dark: #181C32;
   --bs-white-rgb: 255, 255, 255;
   --bs-light-rgb: 245, 248, 250;
-  --bs-primary-rgb: 0, 158, 247;
+  /* --bs-primary-rgb: 0, 158, 247; */
+  --bs-primary-rgb: 16, 49, 120;
   --bs-secondary-rgb: 228, 230, 239;
   --bs-success-rgb: 80, 205, 137;
   --bs-info-rgb: 114, 57, 234;
@@ -31978,7 +31979,7 @@ textarea.form-control-lg {
 }
 
 .text-primary {
-  color: #009EF7 !important;
+  color: #103178 !important;
 }
 
 .text-inverse-primary {

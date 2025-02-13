@@ -57,4 +57,15 @@ $(document).ready(function(){
 	$(".next").click(function () {
 		$('#lasted-product').find(".product-cards").slick("slickNext");
 	});
+
+	$(document).ready(function () {
+        $("#menu-burger").click(function () {
+            let menuBar = $("#menu-bar");
+            if (menuBar.height() === 0) {
+                menuBar.height(50); // Mở rộng
+            } else {
+                menuBar.height(0); // Thu gọn
+            }
+        });
+    });
 });
