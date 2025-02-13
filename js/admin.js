@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
 	$('.product-cards').slick({
-		dots: false,
+		dots: true,
 		infinite: true,
 		arrows: false,
 		speed: 500,
@@ -66,6 +66,36 @@ $(document).ready(function(){
             } else {
                 menuBar.height(0); // Thu gọn
             }
-        });
-    });
+		});
+
+		$(".open-menu").click(function () {
+            let menuBar = $("#menu-side");
+            if (menuBar.width() === 0) {
+                menuBar.width("100vw"); // Mở rộng
+            } else {
+                menuBar.width(0); // Thu gọn
+            }
+		});
+	});
+	
+	$('.centered-slide').slick({
+		centerMode: true, // Bật chế độ center
+		centerPadding: '60px', // Khoảng cách giữa các item
+		slidesToShow: 3, // Số item hiển thị
+		autoplay: true,
+		arrows: false,
+		speed: 500,
+		responsive: [
+		  {
+			breakpoint: 768,
+			settings: {
+			  arrows: false,
+			  centerMode: true,
+			  centerPadding: '40px',
+			  slidesToShow: 1
+			}
+		  }
+		]
+	});
+	
 });

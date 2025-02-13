@@ -54,6 +54,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #181C32;
   --bs-body-bg: #ffffff;
+  --bs-light-primary: #DAECFA
 }
 
 *,
@@ -30701,7 +30702,7 @@ textarea.form-control-lg {
   }
 }
 :root {
-  --bs-light-primary:#F1FAFF;
+  --bs-light-primary:#DAECFA;
   --bs-active-primary:#0095E8;
   --bs-light-success:#E8FFF3;
   --bs-active-success:#47BE7D;
@@ -30791,7 +30792,7 @@ textarea.form-control-lg {
 }
 
 .bg-light-primary {
-  background-color: #F1FAFF !important;
+  background-color: var(--bs-light-primary) !important;
 }
 .bg-light-primary.hoverable:hover {
   background-color: #d2efff !important;

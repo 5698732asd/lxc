@@ -14,7 +14,7 @@ body{
     object-position: center;
 }
 .card-info {
-  border-radius: 10px;
+  border-radius: .5rem;
   overflow: hidden;
 }
 .card-info img{
@@ -61,6 +61,9 @@ body{
   background: rgba(255, 255, 255, 0.874);
   width: 100%;
   padding-top: 5%;
+  a{
+    font-size: calc(1.3rem + 0.2vw) ;
+  }
 }
 
 .mask{
@@ -170,4 +173,81 @@ body{
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
+}
+#blog * {
+  border-radius: .5rem;
+}
+#blog .blog-info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.405);
+  color: white;
+  padding: 2% 5%;
+}
+.blog-info .blog-desc{
+  white-space: nowrap;        
+  overflow: hidden;     
+  text-overflow: ellipsis;  
+  width: 100%;
+}
+
+#blog .date-tag{
+  background: var(--bs-primary);
+  position: absolute;
+  top: 0;
+  right: 5%;
+  border-radius: 0;
+  color: white;
+  padding: 2% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#blog .date-tag .day{
+  line-height: 1
+}
+#projects .project-info
+{
+  z-index: 3;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.493);
+  width: 100%;
+  padding: 2% 5%;
+}
+#projects .card-info{
+  transition: all ease-in-out .5s;
+}
+#projects .slick-slide:not(.slick-center){
+  scale: 0.9;
+  opacity: 0.5;
+}
+#menu-side{
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  background: white;
+  z-index: 2;
+  font-size: 1.3rem;
+  overflow: hidden;
+  transition: all ease-in-out .15s;
+  padding: 10% 0;
+
+  i{
+    font-size: 1.3rem;
+  }
+  .menu-content{
+    padding: 0 10%;
+  }
+}
+
+.list-group-item {
+  border: 0 !important;
+  padding-left: 0;
+}
+#menu-side .accordion-item {
+  border: 0;
 }
