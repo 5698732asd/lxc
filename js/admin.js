@@ -24,6 +24,7 @@ $(document).ready(function(){
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		swipeToSlide: true, 
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -62,33 +63,20 @@ $(document).ready(function(){
 		});
 
 		$(".open-menu").click(function () {
-            let menuBar = $("#menu-side");
-            if (menuBar.width() === 0) {
-                menuBar.width("100vw"); // Mở rộng
-            } else {
-                menuBar.width(0); // Thu gọn
-            }
+			let menuBar = $("#menu-side");
+			let navMobile = $("#nav-mobile");
+		
+			if (menuBar.width() === 0) {
+				menuBar.width("100vw"); // Mở rộng menu
+			} else {
+				menuBar.width(0); // Thu gọn menu
+			}
+		
+			navMobile.toggleClass("d-none d-flex"); // Ẩn/hiện bằng cách thay đổi class
 		});
-		// $(".solution-product").hover(function () {
-		// 	let newGroup = $(this).attr("group");
-        //     let newTitle = $(this).attr("title");
-        //     let newDesc = $(this).attr("desc");
-
-		// 	$(".title-target, .desc-target, .btn-group").stop(true, true).fadeOut(200, function () {
-		// 		$(".group-target").text(newGroup);
-        //         $(".title-target").text(newTitle);
-        //         $(".desc-target").text(newDesc);
-        //         $(".title-target, .desc-target").fadeIn(200);
-        //     });
-        // }, function () {
-        //     // Khi rời chuột, quay về nội dung mặc định với hiệu ứng fade
-		// 	$(".title-target, .desc-target").stop(true, true).fadeOut(200, function () {
-		// 		$(".group-target").text("")
-        //         $(".title-target").text("Lorem ipsum dolor, sit amet consectetur");
-        //         $(".desc-target").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio eos debitis rerum amet officiis, quod libero adipisci inventore! Blanditiis facilis consequatur tenetur quibusdam aspernatur quae porro alias dolorum ullam?");
-        //         $(".title-target, .desc-target, .group-target").fadeIn(200);
-        //     });
-        // });
+		
+		
+		
 
 		let defaultGroup = $(".group-target").text();
 		let defaultTitle = $(".title-target").text();
@@ -128,6 +116,7 @@ $(document).ready(function(){
 		centerPadding: '60px', // Khoảng cách giữa các item
 		slidesToShow: 3, // Số item hiển thị
 		autoplay: true,
+		swipeToSlide: true, 
 		arrows: false,
 		speed: 500,
 		responsive: [
@@ -149,7 +138,8 @@ $(document).ready(function(){
         autoplaySpeed: 0,
         speed: 15000,
         cssEase: 'linear',
-        slidesToShow: 1,
+		slidesToShow: 1,
+		swipeToSlide: true, 
         slidesToScroll: 1,
 		infinite: true,
 		slidesToShow: 6,
@@ -189,6 +179,7 @@ $(document).ready(function(){
 		centerPadding: '60px', // Khoảng cách giữa các item
 		slidesToShow: 3, // Số item hiển thị
 		autoplay: true,
+		swipeToSlide: true, 
 		arrows: true,
 		speed: 500,
 		responsive: [
