@@ -7,6 +7,9 @@ body{
     position: relative;
     height: max-content;
 }
+#footer-nav{
+  width: 100vw;
+}
 .sticky-head{
   position: fixed;
   top:0px;
@@ -397,4 +400,10 @@ body{
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+.ellipsis-1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Giới hạn 4 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
