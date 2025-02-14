@@ -15,8 +15,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/style.bundle.css">
-	<link rel="stylesheet" href="../css/cart.css">
+	<link rel="stylesheet" href="../css/contact.css">
 	<link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +56,7 @@
 			</div>
 		</div>
 	</div>
-    <section class="cart container py-3">
+    <section class="contact container py-3">
         <div class="row mt-5 gy-4"> 
             <!-- Thanh điều hướng -->
             <div class="col-12 breadcrumb-container ps-0">
@@ -62,74 +65,44 @@
                         <li class="breadcrumb-item">
                             <a href="/" class="text-decoration-none text-primary fw-semibold fs-4">Trang chủ</a>
                         </li>
-                        <li class="breadcrumb-item active fw-semibold fs-4" aria-current="page">Giỏ hàng</li>
+                        <li class="breadcrumb-item active fw-semibold fs-4" aria-current="page">Liên hệ</li>
                     </ol>
                 </nav>
             </div>
-
-            <div class="container-fluid cart-container">
+            <div class="contact-section">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="cart-title">GIỎ HÀNG <span class="text-muted">(3)</span></h2>
-                        <table class="table mt-5">
-                            <thead>
-                                <tr>
-                                    <th class="text-start">TÊN SẢN PHẨM</th>
-                                    <th>ĐƠN GIÁ</th>
-                                    <th>SỐ LƯỢNG</th>
-                                    <th class="text-end">TẠM TÍNH</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-start">
-                                        <img src="../Assest/stock/600x400/img-10.jpg" class="product-img" alt="Thermometer"> Màng hình sony
-                                    </td>
-                                    <td>7,000,000 đ</td>
-                                    <td>
-                                        <div class="quantity-controls">
-                                            <button onclick="decreaseQuantity('quantity')">-</button>
-                                            <input id="quantity" value="1" min="1">
-                                            <button onclick="increaseQuantity('quantity')">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="text-end">7,000,000 đ</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-start">
-                                        <img src="../Assest/stock/600x400/img-10.jpg" class="product-img" alt="Thermometer"> Màng hình sony
-                                    </td>
-                                    <td>7,000,000 đ</td>
-                                    <td>
-                                        <div class="quantity-controls">
-                                            <button onclick="decreaseQuantity('quantity1')">-</button>
-                                            <input id="quantity1" value="1" min="1">
-                                            <button onclick="increaseQuantity('quantity1')">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="text-end">7,000,000 đ</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3" class="text-end"></td>
-                                    <td class="pt-0 mt-0">
-                                        <table style="width: 100%;">
-                                            <tr>
-                                                <td class="text-start fs-1">TẠM TÍNH :</td>
-                                                <td class="text-end fs-1">14,000,000 đ</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start fs-1">TỔNG :</td>
-                                                <td class="text-end fs-1">14,000,000 đ</td>
-                                            </tr>
-                                        </table>
-                                        <button class="btn btn-checkout w-100 mt-5">Thanh toán</button>
-                                        <a href="#" class="d-block text-center mt-2">Tiếp tục mua thêm</a>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                        <div class="col-md-4">
+                            <div class="contact-info">
+                                <h2>Hãy liên hệ chúng tôi</h2>
+                                <p><i class="fi fi-rr-postal-address fs-1 fw-bold"></i>&nbsp Toà nhà CT1, Căn 1.07, Đường 19 tháng 5, Xã Vĩnh Hiệp, Thành Phố Nha Trang, Tỉnh Khánh Hoà.</p>
+                                <p class="contact-info"><i class="fi fi-rr-phone-call fs-1 fw-bold"></i> &nbsp <strong>𝟎𝟖𝟖 𝟔𝟓𝟔𝟖 𝟒𝟒𝟒 - 𝟎𝟐𝟓𝟖 𝟑𝟓𝟏𝟎 𝟐𝟗𝟗</strong></p>
+                                <p> <i class="fi fi-rr-calendar-clock fs-1 fw-bold"></i> &nbsp Thứ 2 – 7: 8 giờ – 21 giờ <br/>
+                                    Chủ nhật: 8 giờ – 17 giờ</p>
+                                <button class="btn w-100 fs-4" onclick="window.location.href='mailto:info@lxc.vn'"><i class="fi fi-rr-envelope fs-1 fw-bold me-2"></i> info@lxc.vn</button>
+                            </div>
+                        </div>
+                        <div class="col-md-8 map-container">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.5738689558127!2d109.16948504694122!3d12.255539276522292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31705da7ed8697bf%3A0x524f26268b679c4d!2zQ1QxIFbEqW5oIMSQaeG7gW0gVHJ1bmc!5e0!3m2!1svi!2s!4v1739506511732!5m2!1svi!2s"
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                </div>
+                <div class="row mt-10">
+                    <h3 class="mb-4">Chúng tôi sẽ phản hồi các bạn trong thời gian sớm nhất</h3>
+                    <div class="col-md-12 contact-form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Tên">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="tel" class="form-control" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <textarea class="form-control" placeholder="Tin nhắn"></textarea>
+                        <button class="btn btn-send mt-3">Gửi tin nhắn</button>
                     </div>
                 </div>
             </div>
@@ -184,6 +157,5 @@
 </body>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="/js/admin.js"></script>
-<script type="text/javascript" src="/js/product.js"></script>
 
 </html>

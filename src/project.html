@@ -15,8 +15,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/style.bundle.css">
-	<link rel="stylesheet" href="../css/cart.css">
+	<link rel="stylesheet" href="../css/project.css">
 	<link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +56,7 @@
 			</div>
 		</div>
 	</div>
-    <section class="cart container py-3">
+    <section class="project container py-3">
         <div class="row mt-5 gy-4"> 
             <!-- Thanh điều hướng -->
             <div class="col-12 breadcrumb-container ps-0">
@@ -62,78 +65,69 @@
                         <li class="breadcrumb-item">
                             <a href="/" class="text-decoration-none text-primary fw-semibold fs-4">Trang chủ</a>
                         </li>
-                        <li class="breadcrumb-item active fw-semibold fs-4" aria-current="page">Giỏ hàng</li>
+                        <li class="breadcrumb-item active fw-semibold fs-4" aria-current="page">Dự án</li>
                     </ol>
                 </nav>
             </div>
-
-            <div class="container-fluid cart-container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="cart-title">GIỎ HÀNG <span class="text-muted">(3)</span></h2>
-                        <table class="table mt-5">
-                            <thead>
-                                <tr>
-                                    <th class="text-start">TÊN SẢN PHẨM</th>
-                                    <th>ĐƠN GIÁ</th>
-                                    <th>SỐ LƯỢNG</th>
-                                    <th class="text-end">TẠM TÍNH</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-start">
-                                        <img src="../Assest/stock/600x400/img-10.jpg" class="product-img" alt="Thermometer"> Màng hình sony
-                                    </td>
-                                    <td>7,000,000 đ</td>
-                                    <td>
-                                        <div class="quantity-controls">
-                                            <button onclick="decreaseQuantity('quantity')">-</button>
-                                            <input id="quantity" value="1" min="1">
-                                            <button onclick="increaseQuantity('quantity')">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="text-end">7,000,000 đ</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-start">
-                                        <img src="../Assest/stock/600x400/img-10.jpg" class="product-img" alt="Thermometer"> Màng hình sony
-                                    </td>
-                                    <td>7,000,000 đ</td>
-                                    <td>
-                                        <div class="quantity-controls">
-                                            <button onclick="decreaseQuantity('quantity1')">-</button>
-                                            <input id="quantity1" value="1" min="1">
-                                            <button onclick="increaseQuantity('quantity1')">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="text-end">7,000,000 đ</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3" class="text-end"></td>
-                                    <td class="pt-0 mt-0">
-                                        <table style="width: 100%;">
-                                            <tr>
-                                                <td class="text-start fs-1">TẠM TÍNH :</td>
-                                                <td class="text-end fs-1">14,000,000 đ</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start fs-1">TỔNG :</td>
-                                                <td class="text-end fs-1">14,000,000 đ</td>
-                                            </tr>
-                                        </table>
-                                        <button class="btn btn-checkout w-100 mt-5">Thanh toán</button>
-                                        <a href="#" class="d-block text-center mt-2">Tiếp tục mua thêm</a>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
+        </div>
+        <div class="mt-5 mb-5">
+            <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="../Assest/stock/600x400/img-10.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Khu resort bãi dài</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="../Assest/stock/600x400/img-9.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Công ty trách nhiệm hữu hạng minh phát</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="../Assest/stock/600x400/img-8.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Nhà hàng seoul bulgogi</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="../Assest/stock/600x400/img-7.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Vàng bạc bảo tín mạnh hải</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="../Assest/stock/600x400/img-6.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Latest innovation in electronic toothbrushes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="../Assest/stock/600x400/img-5.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Luxury and elegance in dental care products</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>  
     </section>
 	<footer class="bottom-0 pt-lg-10 pb-lg-10 pb-20 container text-primary fs-5 border-top border-1 ">
 		<div class="row gap-5">
@@ -184,6 +178,5 @@
 </body>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="/js/admin.js"></script>
-<script type="text/javascript" src="/js/product.js"></script>
 
 </html>
