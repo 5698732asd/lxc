@@ -371,3 +371,30 @@ body{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.product-category-nav{
+  width: 100vw;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all ease .5s;
+  pointer-events: none;
+ 
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr)); /* Luôn có 6 cột */
+    gap: 25px;
+  }
+
+} 
+.product-categories-target:hover .product-category-nav{
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
