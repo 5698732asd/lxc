@@ -23,11 +23,12 @@
 
 <body>
 	<!-- <div class="bg-info w-100 d-flex flex-center fs-4 py-2 text-warning">Due to the COVID 19 epidemic, orders may be processed with a slight delay</div> -->
-
 	<div class="sticky-top bg-white shadow-sm d-none d-lg-block">
 		<div class="container d-flex">
 			<div id="logo" class="w-25 d-flex justify-content-between align-items-center">
-				<img class="w-75" src="Assest/lxc-dark.png" alt="">
+				<a href="Index.html">
+					<img class="w-75" src="Assest/lxc-dark.png" alt="">
+				</a>
 				<a href="javascript:void(0);" id="menu-burger">
 					<i class="fi fi-rr-menu-burger fs-1 text-primary"></i>
 				</a>
@@ -39,17 +40,74 @@
 				</div>
 			</div>
 			<div id="logo" class="w-25 d-flex flex-center justify-content-between fs-4">
-				<div class="">#Option1</div>
-				<div class="">#Option2</div>
+				<div class="">Language</div>
+				<div class="">Currency</div>
 				<!-- <div class=""><i class="fi fi-rr-heart fs-3"></i></div>
 				<div class=""><i class="fi fi-rr-user fs-3"></i></div> -->
-				<div class=""><i class="fi fi-rr-shopping-cart fs-3"></i></div>
+				<div class="cart position-relative">
+					<a href="/src/cart.html">
+						<i class="fi fi-rr-shopping-cart fs-3"></i>
+					</a>
+					<div class="cart-view">
+						<div class="d-flex p-10 flex-column gap-5">
+							<div class="cart-items w-100 d-flex flex-column gap-5 mh-500px overflow-scroll">
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/stock/600x600/img-16.jpg" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Product Name #1</h2>
+										<h3 class="text-orange">$ 30</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/stock/600x600/img-16.jpg" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Product Name #1</h2>
+										<h3 class="text-orange">$ 30</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/stock/600x600/img-16.jpg" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Product Name #1</h2>
+										<h3 class="text-orange">$ 30</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+							</div>
+							<div class="total w-100 d-flex">
+								<div class="fw-bold fs-3 text-primary">
+									Tổng tiền
+								</div>
+								<div class="ms-auto fw-bold fs-3 text-primary">
+									3.231.231 đ
+								</div>
+							</div>
+							<div class="cart-actions w-100">
+								<button class="orange-btn rounded-pill w-100">View cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="separator"></div>
 		<div id="menu-bar" class="container d-flex justify-content-between align-items-center">
 			<div class="flex-grow-1 d-flex gap-5 fs-4 fw-bold">
-				<a href="#">Thiết bị Camera</a>
+				<a href="/src/ListProduct.html">Thiết bị Camera</a>
 				<a href="#">Thiết bị Camera</a>
 				<a href="#">Thiết bị Camera</a>
 				<a href="#">Thiết bị Camera</a>
@@ -60,6 +118,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="sticky-top bg-white shadow-sm d-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="Index.html">
+                    <img class="w-200px" src="../Assest/lxc-dark.png" alt="">
+                </a>
+                <i class="fi fi-rr-search fs-3tx text-primary"></i>
+
+            </div>
+        </div>
+    </div>
+    
 
 	<div id="menu-side">
 		<div class="menu-content">
@@ -194,7 +264,6 @@
 						<div class="container">
 							<h1 class="banner-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 							<p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe officia quia voluptate ducimus iure, velit voluptatum possimus officiis odio illum quam cupiditate iste aliquam, facere quas? Dolores, nostrum quasi?</p>
-							<button type="button" class="btn btn-primary rounded-pill fs-3">Tìm hiểu thêm</button>
 						</div>
 					</div>
 					<img class="d-block h-100" src="/Assest/stock/2000x800/1.jpg" alt="First slide">
@@ -205,7 +274,6 @@
 						<div class="container">
 							<h1 class="banner-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 							<p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe officia quia voluptate ducimus iure, velit voluptatum possimus officiis odio illum quam cupiditate iste aliquam, facere quas? Dolores, nostrum quasi?</p>
-							<button type="button" class="btn btn-primary rounded-pill fs-3">Tìm hiểu thêm</button>
 						</div>
 					</div>
 					<img class="d-block h-100" src="/Assest/stock/2000x800/2.jpg" alt="First slide">
@@ -215,7 +283,6 @@
 						<div class="container">
 							<h1 class="banner-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 							<p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe officia quia voluptate ducimus iure, velit voluptatum possimus officiis odio illum quam cupiditate iste aliquam, facere quas? Dolores, nostrum quasi?</p>
-							<button type="button" class="btn btn-primary rounded-pill fs-3">Tìm hiểu thêm</button>
 						</div>
 					</div>
 					<img class="d-block h-100" src="/Assest/stock/2000x800/3.jpg" alt="First slide">
@@ -231,7 +298,7 @@
 					<h1 class="introduce-title">Tại sao chọn LXC Technology</h1>
 					<p class="introduce-desc">Được thành lập vào năm 2020, với sứ mệnh mang đến cho khách hàng một sự trải nghiệm với về sản phẩn phẩm công nghệ.  
 						Sản phẩm đa dạng, đội ngủ kỹ thuật chuyên sâu, LXC đã có nhiều năm kinh nghiệm trong lĩnh vực công nghệ thông tin.</p>
-						<button type="button" class="btn btn-primary rounded-pill fs-3">Tìm hiểu thêm</button>
+						<button type="button" class="orange-btn rounded-pill fs-3">Tìm hiểu thêm</button>
 				</div>
 				<div class="col-12 col-lg-7 d-flex justify-content-end">
 					<img class="d-block w-100" src="/Assest/introduce.png" alt="">
@@ -346,19 +413,19 @@
 					</div>
 				</div>
 			</div>
-			<a class="prev start-0 w-50px d-none d-lg-flex">
+			<!-- <a class="prev start-0 w-50px d-none d-lg-flex">
 				<i class="fi fi fi-ss-angle-circle-left"></i>
 			</a>
 			<a class="next end-0 w-50px d-none d-lg-flex">
 				<i class="fi fi fi-ss-angle-circle-right"></i>
-			</a>
+			</a> -->
 		</div>
 
 		<div id="projects" class="container">
 			<div class="w-100 text-center py-5">
 				<h1 class="title">Dự án</h1>
 			</div>
-			<div class="d-block d-sm-flex justify-content-between py-10 centered-slide">
+			<div class="d-block d-sm-flex justify-content-between centered-slide">
 				<div class="card-info position-relative mx-3">
 					<img class="w-100" src="Assest/stock/600x400/img-10.jpg" alt="" srcset="">
 					<div class="project-info fs-3 py-2 position-absolute">
@@ -388,12 +455,16 @@
 
 		<div id="blog" class="container">
 			<div class="w-100 text-center py-5">
-				<h1 class="title">BLOG.</h1>
+				<a href="/blog/blog.html">
+					<h1 class="title">BLOG.</h1>
+				</a>
 			</div>
 			<div  class="blog row">
 				<div class="col-12 col-sm-6 col-lg-4 py-3 position-relative">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/10.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/10.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>
@@ -410,7 +481,9 @@
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 py-3">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/11.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/11.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>
@@ -427,7 +500,9 @@
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 py-3">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/12.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/12.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>
@@ -444,7 +519,9 @@
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 py-3">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/13.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/13.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-lg-2 fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>
@@ -461,7 +538,9 @@
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 py-3">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/14.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/14.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-lg-2 fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>
@@ -478,7 +557,9 @@
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 py-3">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/15.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/15.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-lg-2 fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>
@@ -495,7 +576,9 @@
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 py-3">
 					<div class="overflow-hidden position-relative">
-						<img class="w-100" src="Assest/stock/900x600/16.jpg" alt="" srcset="">
+						<a href="/blog/post.html">
+							<img class="w-100" src="Assest/stock/900x600/16.jpg" alt="" srcset="">
+						</a>
 						<div class="blog-info">
 							<div class="blog-title fs-lg-2 fs-1">Lorem ipsum dolor sit amet consectetur.</div>
 							<div class="blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime recusandae veniam facilis aliquam commodi ipsum soluta, dolor cum velit!</div>

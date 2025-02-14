@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css" />
+
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/style.bundle.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<!-- <div class="bg-info w-100 d-flex flex-center fs-4 py-2 text-warning">Due to the COVID 19 epidemic, orders may be processed with a slight delay</div> -->
+	<div class="sticky-top bg-white shadow-sm d-none d-lg-block">
+		<div class="container d-flex">
+			<div id="logo" class="w-25 d-flex justify-content-between align-items-center">
+				<a href="/">
+					<img class="w-75" src="/Assest/lxc-dark.png" alt="">
+				</a>
+				<a href="javascript:void(0);" id="menu-burger">
+					<i class="fi fi-rr-menu-burger fs-1 text-primary"></i>
+				</a>
+			</div>
+			<div id="logo" class="w-50 px-10 d-flex flex-center">
+				<div class="w-100 position-relative">
+					<input class="form-control w-100" type="text" placeholder="Search ...">
+					<i class="fi fi-rr-search fs-3 position-absolute top-25 end-0 me-5"></i>
+				</div>
+			</div>
+			<div id="logo" class="w-25 d-flex flex-center justify-content-between fs-4">
+				<div class="">Language</div>
+				<div class="">Currency</div>
+				<!-- <div class=""><i class="fi fi-rr-heart fs-3"></i></div>
+				<div class=""><i class="fi fi-rr-user fs-3"></i></div> -->
+				<div class="cart position-relative">
+					<a href="/src/cart.html">
+						<i class="fi fi-rr-shopping-cart fs-3"></i>
+					</a>
+					<div class="cart-view">
+						<div class="d-flex p-10 flex-column gap-5">
+							<div class="cart-items w-100 d-flex flex-column gap-5 mh-500px overflow-scroll">
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="/Assest/stock/600x600/img-16.jpg" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Product Name #1</h2>
+										<h3 class="text-orange">$ 30</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="/Assest/stock/600x600/img-16.jpg" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Product Name #1</h2>
+										<h3 class="text-orange">$ 30</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="/Assest/stock/600x600/img-16.jpg" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Product Name #1</h2>
+										<h3 class="text-orange">$ 30</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+							</div>
+							<div class="total w-100 d-flex">
+								<div class="fw-bold fs-3 text-primary">
+									Tổng tiền
+								</div>
+								<div class="ms-auto fw-bold fs-3 text-primary">
+									3.231.231 đ
+								</div>
+							</div>
+							<div class="cart-actions w-100">
+								<button class="orange-btn rounded-pill w-100">View cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="separator"></div>
+		<div id="menu-bar" class="container d-flex justify-content-between align-items-center">
+			<div class="flex-grow-1 d-flex gap-5 fs-4 fw-bold">
+				<a href="/src/ListProduct.html">Thiết bị Camera</a>
+				<a href="#">Thiết bị Camera</a>
+				<a href="#">Thiết bị Camera</a>
+				<a href="#">Thiết bị Camera</a>
+				<a href="#">Thiết bị Camera</a>
+				<a href="#">Thiết bị Camera</a>
+			</div>
+			<div class="d-flex flex-center text-gray-600 fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			</div>
+		</div>
+	</div>
+    <div class="sticky-top bg-white shadow-sm d-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="/">
+                    <img class="w-200px" src="/Assest/lxc-dark.png" alt="">
+                </a>
+                <i class="fi fi-rr-search fs-3tx text-primary"></i>
+
+            </div>
+        </div>
+    </div>
+
+	<div id="menu-side">
+		<div class="menu-content">
+			<div class="accordion accordion-icon-toggle">
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#electronics">
+						Electronics
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="electronics">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#laptops">
+							Laptops
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="laptops">
+							<a class="list-group-item list-group-item-action">Laptop Model 1</a>
+							<a class="list-group-item list-group-item-action">Laptop Model 2</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#smartphones">
+							Smartphones
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="smartphones">
+							<a class="list-group-item list-group-item-action">Smartphone Model 1</a>
+							<a class="list-group-item list-group-item-action">Smartphone Model 2</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#homeAppliances">
+						Home Appliances
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="homeAppliances">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#kitchen">
+							Kitchen Appliances
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="kitchen">
+							<a class="list-group-item list-group-item-action">Blender</a>
+							<a class="list-group-item list-group-item-action">Microwave</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#livingRoom">
+							Living Room Appliances
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="livingRoom">
+							<a class="list-group-item list-group-item-action">TV</a>
+							<a class="list-group-item list-group-item-action">Air Conditioner</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#fashion">
+						Fashion
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="fashion">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#menswear">
+							Menswear
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="menswear">
+							<a class="list-group-item list-group-item-action">Shirts</a>
+							<a class="list-group-item list-group-item-action">Trousers</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#womenswear">
+							Womenswear
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="womenswear">
+							<a class="list-group-item list-group-item-action">Dresses</a>
+							<a class="list-group-item list-group-item-action">Tops</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#beauty">
+						Beauty & Health
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="beauty">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#skincare">
+							Skincare
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="skincare">
+							<a class="list-group-item list-group-item-action">Moisturizer</a>
+							<a class="list-group-item list-group-item-action">Sunscreen</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#makeup">
+							Makeup
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="makeup">
+							<a class="list-group-item list-group-item-action">Foundation</a>
+							<a class="list-group-item list-group-item-action">Lipstick</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-nav" class="d-lg-none d-flex w-100 position-fixed px-4 py-5 bottom-0 bg-white border-top shadow z-index-3 justify-content-around">
+		<div class="open-menu">
+			<i class="fi fi-rr-menu-burger fs-2x"></i>
+		</div>
+		<div class="">
+			<i class="fi fi-rr-house-chimney fs-2x"></i>
+		</div>
+		<div class="">
+			<i class="fi fi-rr-heart fs-2x"></i>
+		</div>
+		<div class="">
+			<i class="fi fi-rr-user fs-2x"></i>
+		</div>
+		<div class="">
+			<i class="fi fi-rr-shopping-cart fs-2x"></i>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb p-3 ps-0 rounded mb-0">
+                    <li class="breadcrumb-item">
+                        <a href="/" class="text-decoration-none text-primary fw-semibold fs-4">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/blog/blog.html" class="text-decoration-none text-primary fw-semibold fs-4">Blog</a>
+                    </li>
+                    <li class="breadcrumb-item active fw-semibold fs-4" aria-current="page">Bài viết</li>
+                </ol>
+            </nav>
+        </div>	
+		<div class="container d-flex flex-column gap-10">
+            <div class="row">
+                <div class="col-lg-9 col-12 d-flex flex-column gap-10">
+                    <div class="post d-flex flex-column gap-5">
+                        <div class="separator"></div>
+                        <h1 class="text-primary fs-4hx">The latest tests of popular masks in accordance with CV2s standards</h1>
+                        <h4 class="text-primary tracking-wider">May 22, 2021 <span class="ps-4 fs-5 fw-normal text-gray-600">Alfredo Austin</span></h4> 
+                        <img src="/Assest/stock/900x600/10.jpg" alt="" srcset="">
+                        <div class="content fs-3 text-primary tracking-wide text-justify">
+                            <p class="fw-bold fs-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias possimus dignissimos vel in error animi eos optio. Tempore, expedita! Tempore similique sunt unde neque obcaecati laudantium saepe fuga a?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae illum corrupti eligendi temporibus hic delectus quasi quo obcaecati fuga repudiandae? Ut dolores perspiciatis sapiente possimus saepe temporibus, nemo rem ea nulla excepturi sed rerum ab iure! Molestiae rem architecto porro non quas eveniet, commodi suscipit similique modi sequi omnis error vel hic repudiandae pariatur accusamus sapiente nemo aliquid natus odio libero explicabo eligendi ratione. Fugit neque quis dolor nisi, sunt expedita dignissimos voluptatibus earum. Porro debitis pariatur voluptatibus sit vitae! Aut suscipit sint, a quasi aliquid ex. Dolorem tempora, nobis accusamus voluptates reprehenderit cum, placeat suscipit nemo nihil officia sed?</p>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 py-4">
+                                    <img class="w-100" src="/Assest/stock/600x600/img-15.jpg" alt="" srcset="">
+                                </div>
+                                <div class="col-12 col-lg-6 py-4">
+                                    <h2 class="text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nam eligendi corporis, possimus libero qui quod cumque asperiores dolorum, modi atque consequatur voluptatem quia excepturi ipsam voluptates facilis accusamus nihil.</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolorum iure autem modi quibusdam temporibus laudantium commodi, mollitia veritatis ex iste fugiat ullam maiores aspernatur cumque eum asperiores. Repellendus voluptatum iusto nobis cumque quam similique porro recusandae impedit error necessitatibus. Esse, excepturi quibusdam temporibus aperiam laborum ipsum sapiente odit corporis.</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum sint iure facilis unde, illo autem aliquam nobis a placeat, dolor voluptates est maiores, esse voluptate tenetur porro voluptas? Adipisci maiores iste rerum, aliquam, culpa quam doloribus dolor harum facere rem aliquid architecto dicta ea, maxime quisquam est vitae ad aspernatur vel dolorum nobis officiis! Iste fugit incidunt nam, nihil quibusdam debitis, nemo natus repudiandae eligendi cumque alias, culpa officia. Incidunt dolores facere beatae deserunt sequi, debitis cum saepe, quis illum inventore impedit ad velit possimus sed ipsum odio tempora, neque magni asperiores quae consequuntur mollitia quas? Fuga sed mollitia quos dicta sit rerum, laborum at a eveniet cum maiores ipsum ea ad sunt voluptatem vitae animi accusantium. Laboriosam labore facilis suscipit iste. Illo, deserunt eveniet eligendi impedit cum pariatur aspernatur optio consequatur voluptatum temporibus nisi repellat alias ducimus dolore, sapiente voluptate, atque quae officiis beatae dolor! Ducimus, quod magni.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="d-flex flex-column gap-5">
+                        <h1 class="title">Comments (3)</h1>
+                        <div class="d-flex flex-column gap-5">
+                            <div class="comment row">
+                                <div class="d-flex gap-5 col-lg-4 col-12 py-2">
+                                    <div class="avatar w-70px d-flex flex-column justify-content-center">
+                                        <img class="w-100 rounded-circle" src="/Assest/stock/600x600/img-5.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <div class="text-primary fs-4 fw-bold">VO THANH LOC</div>
+                                        <div>14/02/2025 10:17</div>
+                                    </div>
+                                </div>
+                                <div class="content text-primary fs-5 col-lg-8 col-12 py-2 px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsam placeat. Suscipit eaque aspernatur repellendus possimus, consequatur exercitationem adipisci quia dolor porro. Sequi amet, commodi, dolores illum, consequatur libero alias quidem inventore totam fugiat ea! Cumque modi reprehenderit inventore vitae mollitia. Eum impedit explicabo minima aliquam quibusdam nihil! Est, voluptates!</p>
+                                </div>
+                            </div>
+                            <div class="comment row">
+                                <div class="d-flex gap-5 col-lg-4 col-12 py-2">
+                                    <div class="avatar w-70px d-flex flex-column justify-content-center">
+                                        <img class="w-100 rounded-circle" src="/Assest/stock/600x600/img-5.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <div class="text-primary fs-4 fw-bold">VO THANH LOC</div>
+                                        <div>14/02/2025 10:17</div>
+                                    </div>
+                                </div>
+                                <div class="content text-primary fs-5 col-lg-8 col-12 py-2 px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsam placeat. Suscipit eaque aspernatur repellendus possimus, consequatur exercitationem adipisci quia dolor porro. Sequi amet, commodi, dolores illum, consequatur libero alias quidem inventore totam fugiat ea! Cumque modi reprehenderit inventore vitae mollitia. Eum impedit explicabo minima aliquam quibusdam nihil! Est, voluptates!</p>
+                                </div>
+                            </div>
+                            <div class="comment row">
+                                <div class="d-flex gap-5 col-lg-4 col-12 py-2">
+                                    <div class="avatar w-70px d-flex flex-column justify-content-center">
+                                        <img class="w-100 rounded-circle" src="/Assest/stock/600x600/img-5.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <div class="text-primary fs-4 fw-bold">VO THANH LOC</div>
+                                        <div>14/02/2025 10:17</div>
+                                    </div>
+                                </div>
+                                <div class="content text-primary fs-5 col-lg-8 col-12 py-2 px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsam placeat. Suscipit eaque aspernatur repellendus possimus, consequatur exercitationem adipisci quia dolor porro. Sequi amet, commodi, dolores illum, consequatur libero alias quidem inventore totam fugiat ea! Cumque modi reprehenderit inventore vitae mollitia. Eum impedit explicabo minima aliquam quibusdam nihil! Est, voluptates!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-5 text-primary">
+                        <h1 class="text-primary">Để lại một bình luận</h1>
+                        <h3 class="fw-normal fs-5">Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</h3>
+                        <div class="row gap-5">
+                            <div class="col-lg-6 col-12"></div>
+                            <div class="col-lg-6 col-12"></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-lg-3 col-12 d-flex flex-column gap-10">
+                    <div class="d-flex flex-column gap-5">
+                        <h2 class="fs-1 text-primary fw-boldest">Category</h2>
+                        <h4 class="text-primary fs-3">qqqqqqqqq</h4>
+                        <h4 class="text-primary fs-3">qqqqqqqqq</h4>
+                        <h4 class="text-primary fs-3">qqqqqqqqq</h4>
+                        <h4 class="text-primary fs-3">qqqqqqqqq</h4>
+                        <h4 class="text-primary fs-3">qqqqqqqqq</h4>
+                    </div>
+                    <div id="related-products">
+                        <h2 class="fs-1 text-primary fw-boldest pb-2">Related Product</h2>
+                        <div class="row gap-lg-5 gap-0">
+                            <div class="my-4 col-6 col-lg-12 position-relative overflow-hidden card-item">
+                                <img class="d-block w-100" src="/Assest/stock/600x600/img-1.jpg" alt="First slide">
+                                <div class="px-3 product-info">
+                                    <a href="" class="fw-bold">Samsung abc xyz record</a>
+                                    <h3 class="text-danger">$ 30.00</h3>
+                                </div>
+                                <div class="card-side">
+                                    <i class="fi fi-rr-shopping-cart"></i>
+                                    <i class="fi fi-rr-heart"></i>
+                                    <i class="fi fi-rr-search"></i>
+                                </div>
+                            </div>
+                            <div class="my-4 col-6 col-lg-12 position-relative overflow-hidden card-item">
+                                <img class="d-block w-100" src="/Assest/stock/600x600/img-1.jpg" alt="First slide">
+                                <div class="px-3 product-info">
+                                    <a href="" class="fw-bold">Samsung abc xyz record</a>
+                                    <h3 class="text-danger">$ 30.00</h3>
+                                </div>
+                                <div class="card-side">
+                                    <i class="fi fi-rr-shopping-cart"></i>
+                                    <i class="fi fi-rr-heart"></i>
+                                    <i class="fi fi-rr-search"></i>
+                                </div>
+                            </div>
+                            <div class="my-4 col-6 col-lg-12 position-relative overflow-hidden card-item">
+                                <img class="d-block w-100" src="/Assest/stock/600x600/img-1.jpg" alt="First slide">
+                                <div class="px-3 product-info">
+                                    <a href="" class="fw-bold">Samsung abc xyz record</a>
+                                    <h3 class="text-danger">$ 30.00</h3>
+                                </div>
+                                <div class="card-side">
+                                    <i class="fi fi-rr-shopping-cart"></i>
+                                    <i class="fi fi-rr-heart"></i>
+                                    <i class="fi fi-rr-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-sm-flex justify-content-between related-post">
+				<div class="card-info position-relative mx-3">
+					<div class="overflow-hidden">
+                        <img class="w-100" src="/Assest/stock/600x400/img-10.jpg" alt="" srcset="">
+                    </div>
+					<div class="project-info fs-3 py-2">
+                        <h4 class="text-primary tracking-wider fs-6">May 22, 2021 <span class="ps-4 fs-7 fw-normal text-gray-600">Alfredo Austin</span></h4> 
+						<h1 class="text-primary fs-3 title">The latest tests of popular masks in accordance with CV2s standards</h1>
+					</div>
+				</div>
+                <div class="card-info position-relative mx-3">
+					<div class="overflow-hidden">
+                        <img class="w-100" src="/Assest/stock/600x400/img-11.jpg" alt="" srcset="">
+                    </div>
+					<div class="project-info fs-3 py-2">
+                        <h4 class="text-primary tracking-wider fs-6">May 22, 2021 <span class="ps-4 fs-7 fw-normal text-gray-600">Alfredo Austin</span></h4> 
+						<h1 class="text-primary fs-3 title">The latest tests of popular masks in accordance with CV2s standards</h1>
+					</div>
+				</div>
+                <div class="card-info position-relative mx-3">
+					<div class="overflow-hidden">
+                        <img class="w-100" src="/Assest/stock/600x400/img-12.jpg" alt="" srcset="">
+                    </div>
+					<div class="project-info fs-3 py-2">
+                        <h4 class="text-primary tracking-wider fs-6">May 22, 2021 <span class="ps-4 fs-7 fw-normal text-gray-600">Alfredo Austin</span></h4> 
+						<h1 class="text-primary fs-3 title">The latest tests of popular masks in accordance with CV2s standards</h1>
+					</div>
+				</div>
+                <div class="card-info position-relative mx-3">
+					<div class="overflow-hidden">
+                        <img class="w-100" src="/Assest/stock/600x400/img-13.jpg" alt="" srcset="">
+                    </div>
+					<div class="project-info fs-3 py-2">
+                        <h4 class="text-primary tracking-wider fs-6">May 22, 2021 <span class="ps-4 fs-7 fw-normal text-gray-600">Alfredo Austin</span></h4> 
+						<h1 class="text-primary fs-3 title">The latest tests of popular masks in accordance with CV2s standards</h1>
+					</div>
+				</div>
+				
+			</div>
+        </div>
+	</div>
+	
+	<footer class="bottom-0 pt-lg-10 pb-lg-10 pb-20 container text-primary fs-5 border-top border-1 ">
+		<div class="row gap-5">
+			<div class="row col-lg-6 col-12 flex-grow-1">
+				<div class="col-12 col-sm-6 d-flex d-sm-block gap-sm-0 gap-5 align-items-center">
+					<img class="w-sm-75 w-50" src="/Assest/lxc-dark.png" alt="">
+					<p class="mb-sm-4 mb-0"><i class="fi fi-rr-house-chimney pe-3 fs-3"></i>Toà nhà CT1, Căn 1.07, Đường 19 tháng 5, Xã Vĩnh Hiệp, Thành Phố Nha Trang</p>
+				</div>
+				<div class="col-12 col-sm-6 d-flex flex-column justify-content-around">
+					<h3>Liên hệ</h3>
+					<p><i class="fi fi-rr-phone-call pe-3 fs-fluid"></i> 088 6568 444 - 0258 3510 299</p>
+					<p><i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn</p>
+					<p><i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn</p>
+				</div>
+			</div>
+			<div class="row col-lg-6 col-12 justify-content-between">
+				<div class="row col-4 flex-column justify-content-around">
+					<h3>Giới thiệu</h3>
+					<a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
+					<a href="#" class="d-block fs-6 mb-4">Tin tức</a>
+					<a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
+					<a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
+				</div>
+				<div class="row col-4 flex-column justify-content-around">
+					<h3>Chính sách khách hàng</h3>
+					<a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
+					<a href="#" class="d-block fs-6 mb-4">Tin tức</a>
+					<a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
+					<a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
+				</div>
+				<div class="row col-4 flex-column justify-content-around">
+					<h3>Liên kết mạng xã hội</h3>
+					<div class="d-flex justify-content-between">
+						<i class="fs-1 fi fi-brands-facebook"></i>
+						<i class="fs-1 fi fi-brands-tik-tok"></i>
+						<i class="fs-1 fi fi-brands-youtube"></i>
+						<i class="fs-1 fi fi-rr-phone-call"></i>
+					</div>
+					<a href="http://online.gov.vn/Home/WebDetails/80612">
+						<img class="w-100" src="/Assest/logoSaleNoti.webp" alt="">
+					</a>
+					<p class="fs-7">Copyright © 2025 by Fama</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
+
+</html>

@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$('.product-cards').slick({
 		dots: true,
 		infinite: true,
-		arrows: false,
+		arrows: true,
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -50,13 +50,6 @@ $(document).ready(function(){
 			}
 		]
 	});
-	$(".prev").click(function () {
-		$('#lasted-product').find(".product-cards").slick("slickPrev");
-	});
-
-	$(".next").click(function () {
-		$('#lasted-product').find(".product-cards").slick("slickNext");
-	});
 
 	$(document).ready(function () {
         $("#menu-burger").click(function () {
@@ -76,21 +69,58 @@ $(document).ready(function(){
                 menuBar.width(0); // Thu gọn
             }
 		});
+		// $(".solution-product").hover(function () {
+		// 	let newGroup = $(this).attr("group");
+        //     let newTitle = $(this).attr("title");
+        //     let newDesc = $(this).attr("desc");
 
-		$(".solution-product").hover(function () {
-			let newGroup = $(this).attr("group");
-			let newTitle = $(this).attr("title");
-			let newDesc = $(this).attr("desc");
+		// 	$(".title-target, .desc-target, .btn-group").stop(true, true).fadeOut(200, function () {
+		// 		$(".group-target").text(newGroup);
+        //         $(".title-target").text(newTitle);
+        //         $(".desc-target").text(newDesc);
+        //         $(".title-target, .desc-target").fadeIn(200);
+        //     });
+        // }, function () {
+        //     // Khi rời chuột, quay về nội dung mặc định với hiệu ứng fade
+		// 	$(".title-target, .desc-target").stop(true, true).fadeOut(200, function () {
+		// 		$(".group-target").text("")
+        //         $(".title-target").text("Lorem ipsum dolor, sit amet consectetur");
+        //         $(".desc-target").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio eos debitis rerum amet officiis, quod libero adipisci inventore! Blanditiis facilis consequatur tenetur quibusdam aspernatur quae porro alias dolorum ullam?");
+        //         $(".title-target, .desc-target, .group-target").fadeIn(200);
+        //     });
+        // });
 
-			$(".group-target, .title-target, .desc-target").addClass("fade"); // Làm mờ trước khi đổi text
-			
-			setTimeout(() => {
-				$(".group-target").text(newGroup);
-				$(".title-target").text(newTitle);
-				$(".desc-target").text(newDesc);
-				$(".group-target, .title-target, .desc-target").removeClass("fade"); // Hiện lại sau khi đổi text
-			}, 300); // Đợi 200ms trước khi đổi nội dung
-		});
+		let defaultGroup = $(".group-target").text();
+		let defaultTitle = $(".title-target").text();
+		let defaultDesc = $(".desc-target").text();
+
+		$(".solution-product").hover(
+			function () {
+				let newGroup = $(this).attr("group");
+				let newTitle = $(this).attr("title");
+				let newDesc = $(this).attr("desc");
+
+				$(".group-target, .title-target, .desc-target").addClass("fade");
+
+				setTimeout(() => {
+					$(".group-target").text(newGroup);
+					$(".title-target").text(newTitle);
+					$(".desc-target").text(newDesc);
+					$(".group-target, .title-target, .desc-target").removeClass("fade");
+				}, 300);
+			},
+			function () {
+				// Khi rời chuột khỏi phần tử
+				$(".group-target, .title-target, .desc-target").addClass("fade");
+
+				setTimeout(() => {
+					$(".group-target").text(defaultGroup);
+					$(".title-target").text(defaultTitle);
+					$(".desc-target").text(defaultDesc);
+					$(".group-target, .title-target, .desc-target").removeClass("fade");
+				}, 300);
+			}
+		);
 	});
 	
 	$('.centered-slide').slick({
@@ -150,6 +180,73 @@ $(document).ready(function(){
 			}
 		  }
 		]
-	  });
+	});
+	
+
+
+	$('.related-post').slick({
+		centerMode: true, // Bật chế độ center
+		centerPadding: '60px', // Khoảng cách giữa các item
+		slidesToShow: 3, // Số item hiển thị
+		autoplay: true,
+		arrows: true,
+		speed: 500,
+		responsive: [
+		  {
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				autoplay: true,
+			  centerMode: true,
+			  centerPadding: '40px',
+			  slidesToShow: 1
+			}
+		  }
+		]
+	});
 	
 });
+
+//#region product
+document.querySelectorAll('.btn-toggle').forEach(button => {
+	let targetID = button.getAttribute('data-bs-target');
+	let target = document.querySelector(targetID);
+	let icon = button.querySelector('.toggle-icon');
+
+	// Khi danh mục mở ra -> đổi icon thành "-"
+	target.addEventListener('shown.bs.collapse', function () {
+		icon.classList.remove('fi-rr-plus');
+		icon.classList.add('fi-rr-minus');
+	});
+
+	// Khi danh mục đóng lại -> đổi icon thành "+"
+	target.addEventListener('hidden.bs.collapse', function () {
+		icon.classList.remove('fi-rr-minus');
+		icon.classList.add('fi-rr-plus');
+	});
+});
+function decreaseQuantity(idCounter) {
+	let quantityInput = document.getElementById(`${idCounter}`);
+	let quantity = parseInt(quantityInput.value);
+	if (quantity > 1) {
+		quantityInput.value = quantity - 1;
+	}
+}
+function increaseQuantity(idCounter) {
+	let quantityInput = document.getElementById(`${idCounter}`);
+	let quantity = parseInt(quantityInput.value);
+	quantityInput.value = quantity + 1;
+}
+
+const priceRange = document.getElementById("priceRange");
+const priceValue = document.getElementById("priceValue");
+
+function updatePrice() {
+	let price = parseInt(priceRange.value);
+	priceValue.textContent = '0 VND - ' + new Intl.NumberFormat("vi-VN").format(price) + " VND";
+}
+
+priceRange.addEventListener("input", updatePrice);
+updatePrice();
+
+//#endregion
