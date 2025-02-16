@@ -1,5 +1,21 @@
 .product-list
 {
+    /* Fixed card height */
+    .card {
+        height: 500px; /* Chiều cao cố định cho card */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* Fixed image height */
+    .card img {
+        height: 200px;         /* Fixed height for the image */
+        width: 100%;
+        object-fit: contain;   /* Hiển thị toàn bộ hình ảnh mà không bị cắt (display full image without cropping) */
+    }
+    
+      
 
     .breadcrumb-container {
         background: white;
@@ -17,7 +33,9 @@
         /* border: 1px solid #ddd; */
         width: fit-content;
     }
-    
+    .max-height-200 {
+        max-height: 200px;
+    }
     /* Nút tăng / giảm */
     .quantity-editor button {
         width: 50px;

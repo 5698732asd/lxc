@@ -401,6 +401,16 @@ body{
   visibility: visible;
   transform: translateY(0);
 }
+
+.multiline-ellipsis {
+  position: relative; /* Cho phép định vị phần tử con */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;           /* Giới hạn 2 dòng */
+  -webkit-box-orient: vertical;    /* Hướng dọc */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
 .ellipsis-1{
   display: -webkit-box;
   -webkit-line-clamp: 1; /* Giới hạn 4 dòng */
