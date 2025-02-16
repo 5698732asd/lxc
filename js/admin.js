@@ -240,8 +240,10 @@ function updatePrice() {
 	let price = parseInt(priceRange.value);
 	priceValue.textContent = '0 VND - ' + new Intl.NumberFormat("vi-VN").format(price) + " VND";
 }
-
-priceRange.addEventListener("input", updatePrice);
-updatePrice();
+if(priceRange)
+{
+	priceRange.addEventListener("input", updatePrice);
+	updatePrice();
+}
 
 //#endregion

@@ -281,16 +281,16 @@ body{
   font-size: 1.7rem;
   color: var(--bs-primary);
 }
-.cart-view{
+.cart-view {
   width: 450px;
-  background: rgb(255, 255, 255);
+  background: #fff;
   position: absolute;
   right: 0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   transform: translateY(-20px);
   opacity: 0;
-  transition: all ease .3s;
+  transition: all 0.3s ease;
   pointer-events: none;
 }
 
