@@ -1,36 +1,44 @@
 :root {
   --secondary: #fd8d27;
 }
-body{
-    background: white;
-    font-family: "Saira", serif;
-    position: relative;
-    height: max-content;
+
+body {
+  background: white;
+  font-family: "Saira", serif;
+  position: relative;
+  height: max-content;
 }
-#footer-nav{
+
+#footer-nav {
   width: 100vw;
 }
-.sticky-head{
+
+.sticky-head {
   position: fixed;
-  top:0px;
+  top: 0px;
 }
-.carousel-item img{
-    width: 100vw;
-    object-fit: cover;
-    object-position: center;
+
+.carousel-item img {
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
 }
+
 .card-info {
   border-radius: .5rem;
   overflow: hidden;
 }
-.card-info img{
+
+.card-info img {
   transition: all linear .5s;
 }
 
-.card-info img:hover{
+.card-info img:hover {
   scale: 1.2;
 }
-.prev i , .next i{
+
+.prev i,
+.next i {
   font-size: 55px;
   opacity: .3;
   color: var(--bs-primary);
@@ -40,12 +48,16 @@ body{
   border-radius: 50%;
   transition: all linear .3s;
 }
-.prev i:hover , .next i:hover{
+
+.prev i:hover,
+.next i:hover {
   opacity: 1;
   cursor: pointer;
 }
-.prev , .next{
-  top:0;
+
+.prev,
+.next {
+  top: 0;
   position: absolute;
   height: 100%;
   width: 150px;
@@ -53,55 +65,62 @@ body{
   justify-content: center;
   align-items: center;
 }
-.product-info{
+
+.product-info {
   position: absolute;
   bottom: 0;
   background: rgba(255, 255, 255, 0.874);
   width: 100%;
   padding-top: 5%;
-  a{
-    font-size: calc(1.3rem + 0.2vw) ;
+
+  a {
+    font-size: calc(1.3rem + 0.2vw);
   }
 }
 
-.mask{
+.mask {
   width: 100%;
   height: 40%;
-  background: linear-gradient(0deg,white,rgba(255, 255, 255, 0));
-  z-index:100;
+  background: linear-gradient(0deg, white, rgba(255, 255, 255, 0));
+  z-index: 100;
   position: absolute;
   bottom: 0;
 }
-.introduce-title{
+
+.introduce-title {
   font-size: 3.5rem;
   font-weight: bolder;
   color: var(--bs-primary);
 }
-.introduce-desc{
+
+.introduce-desc {
   font-size: 1.7rem;
   color: var(--bs-primary);
 }
-.single-item .content{
+
+.single-item .content {
   width: 100vw;
-  padding-top:1%;
+  padding-top: 1%;
   position: absolute;
   z-index: 3;
   height: 100%;
   /* padding: 1% 200px 1% 200px ; */
-  background: linear-gradient(to right,rgba(0, 0, 0, 0.53),rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(255, 255, 255, 0));
 }
 
-.banner-title{
+.banner-title {
   font-size: 4.5rem;
   width: 50%;
-  color:white;
+  color: white;
 }
-.banner-desc{
+
+.banner-desc {
   font-size: 1.7rem;
   width: 70%;
-  color:white;
+  color: white;
 }
-.card-side{
+
+.card-side {
   position: absolute;
   top: 5%;
   right: -50px;
@@ -112,12 +131,14 @@ body{
   flex-direction: column;
   gap: 10px;
   transition: all ease-in-out .3s;
-  
+
 }
-.product-info{
+
+.product-info {
   transition: all ease-in-out .5s;
 }
-.card-side i{
+
+.card-side i {
   font-size: 15px;
   color: var(--bs-primary);
   background: rgb(227, 227, 227);
@@ -129,8 +150,8 @@ body{
   align-items: center;
   position: relative;
 }
-.card-side i:after
-{
+
+.card-side i:after {
   content: "eeee";
   padding: 5px 10px;
   background: rgb(227, 227, 227);
@@ -141,63 +162,121 @@ body{
   opacity: 0;
   transition: all linear .5s;
 }
-.card-item img{
+
+.card-item img {
   transition: all ease-in-out .5s;
 }
 
 .card-item:hover {
   cursor: pointer;
-  .product-info{
+
+  .product-info {
     transform: translateY(110%)
   }
-  img{
-    
-  }
-  .card-side{
+
+  img {}
+
+  .card-side {
     transform: translateX(-60px)
   }
 }
-.card-side i:hover:after{
+
+.card-side i:hover:after {
   opacity: 1;
   cursor: pointer;
 }
-.title
-{
+
+.title {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: bolder;
   color: var(--bs-primary);
 }
+
 #menu-bar {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
+.card-blog-home {
+  display: flex;
+  flex-direction: column;
+  height: 380px; 
+  background: #fff; 
+  border: none; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.5rem; 
+  transition: box-shadow 0.3s ease; 
+  padding: 10px;
+  overflow: hidden;
+}
+
+.card-blog-home:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.card-blog-home-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.card-blog-home-body {
+  flex: 1; /* chiếm hết chiều cao còn lại */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Giới hạn blog-title và blog-desc hiển thị 2 dòng */
+.blog-title, .blog-desc {
+  display: -webkit-box;          /* Sử dụng flexbox ẩn bớt chữ */
+  -webkit-line-clamp: 2;         /* Chỉ hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical;  /* Hướng hộp dọc (vertical) */
+  overflow: hidden;
+  text-overflow: ellipsis;       /* Thêm dấu '...' */
+  margin-bottom: 0.5rem;         /* Khoảng cách giữa các đoạn */
+}
+
+/* Phóng to chữ "Tìm hiểu thêm" */
+.read-more a {
+  font-size: 1.5rem;    /* Chỉnh font-size to hơn (tùy ý) */
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.read-more a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
 .blog * {
   border-radius: .5rem;
 }
-.blog .blog-info{
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
+/* Remove absolute positioning */
+.blog-info {
+  /* position: absolute;  <-- remove this line */
   width: 100%;
-  border-radius: 0;
   background: rgba(0, 0, 0, 0.405);
   color: white;
-  padding: 2% 5%;
 }
-.blog-info .blog-desc{
-  white-space: nowrap;        
-  overflow: hidden;     
-  text-overflow: ellipsis;  
+
+.blog-info .blog-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
 }
 
-.blog .date-tag{
+/* If you want the date-tag to stay separate, you can also adjust it */
+.date-tag {
   background: var(--bs-primary);
-  position: absolute;
-  top: 0;
-  right: 5%;
-  border-radius: 0;
+  /* Instead of absolute positioning, use margin-top to separate */
+  margin-top: 10px;
+  border-radius: .5rem;
   color: white;
   padding: 2% 2%;
   display: flex;
@@ -205,25 +284,25 @@ body{
   justify-content: center;
   align-items: center;
 }
-.blog .date-tag .day{
-  line-height: 1
-}
-#projects .project-info
-{
+
+#projects .project-info {
   z-index: 3;
   bottom: 0;
   background: rgba(255, 255, 255, 0.894);
   width: 100%;
   padding: 2% 5%;
 }
-#projects .card-info{
+
+#projects .card-info {
   transition: all ease-in-out .5s;
 }
-#projects .slick-slide:not(.slick-center){
+
+#projects .slick-slide:not(.slick-center) {
   scale: 0.9;
   opacity: 0.5;
 }
-#menu-side{
+
+#menu-side {
   position: fixed;
   width: 0;
   height: 100vh;
@@ -234,10 +313,11 @@ body{
   transition: all ease-in-out .15s;
   padding: 10% 0;
 
-  i{
+  i {
     font-size: 1.3rem;
   }
-  .menu-content{
+
+  .menu-content {
     padding: 0 10%;
   }
 }
@@ -246,15 +326,18 @@ body{
   border: 0 !important;
   padding-left: 0;
 }
+
 #menu-side .accordion-item {
   border: 0;
 }
-.solution-product{
+
+.solution-product {
   transition: all ease-in-out .5s;
   overflow: hidden;
   min-width: 10%;
   width: 10%;
-  img{
+
+  img {
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -262,25 +345,29 @@ body{
   }
 }
 
-.solution-product:hover{
+.solution-product:hover {
   width: 100%;
 }
 
 
-#partners img{
+#partners img {
   height: 100px;
 }
-.title-target, .desc-target {
+
+.title-target,
+.desc-target {
   transition: opacity 0.3s ease-in-out;
 }
 
 .fade {
   opacity: 0;
 }
-.desc{
+
+.desc {
   font-size: 1.7rem;
   color: var(--bs-primary);
 }
+
 .cart-view {
   width: 450px;
   background: #fff;
@@ -294,17 +381,19 @@ body{
   pointer-events: none;
 }
 
-.text-orange{
+.text-orange {
   color: var(--secondary);
 }
-.orange-btn{
+
+.orange-btn {
   border: 1px solid var(--secondary) !important;
   padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
   background: rgba(255, 255, 255, 0);
   color: var(--secondary);
   transition: all ease-out .3s;
 }
-.orange-btn:hover{
+
+.orange-btn:hover {
   color: white;
   background: orange;
   border: 0;
@@ -318,40 +407,46 @@ body{
   transform: translateY(0);
 }
 
-.orange-btn-fill{
+.orange-btn-fill {
   border: 0;
   padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
   background: var(--secondary);
   color: white;
   transition: all ease-out .3s;
 }
-.orange-btn-fill:hover{
+
+.orange-btn-fill:hover {
   border: 1px solid var(--secondary) !important;
   background: rgba(255, 255, 255, 0);
   color: var(--secondary);
 }
-.post> img{
+
+.post>img {
   aspect-ratio: 19/9;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-.post p.desc{
+
+.post p.desc {
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Giới hạn 4 dòng */
+  -webkit-line-clamp: 4;
+  /* Giới hạn 4 dòng */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 
-.slick-next{
+.slick-next {
   right: -50px;
 }
-.slick-prev{
+
+.slick-prev {
   left: -50px;
 }
 
-.slick-prev,.slick-next{
+.slick-prev,
+.slick-next {
   width: 50px;
   height: 100%;
   font-size: 50px;
@@ -361,21 +456,26 @@ body{
   transition: opacity ease .5s;
 }
 
-.slick-next:before, .slick-prev:before{
+.slick-next:before,
+.slick-prev:before {
   font-size: 50px;
   color: var(--bs-primary);
 }
-.slick-next:hover, .slick-prev:hover{
+
+.slick-next:hover,
+.slick-prev:hover {
   opacity: 1;
 }
-.project-info .title{
+
+.project-info .title {
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Giới hạn 4 dòng */
+  -webkit-line-clamp: 2;
+  /* Giới hạn 4 dòng */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.product-category-nav{
+.product-category-nav {
   width: 100vw;
   background: white;
   position: absolute;
@@ -386,16 +486,18 @@ body{
   opacity: 0;
   transition: all ease .5s;
   pointer-events: none;
- 
+
 
   .categories {
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr)); /* Luôn có 6 cột */
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    /* Luôn có 6 cột */
     gap: 25px;
   }
 
-} 
-.product-categories-target:hover .product-category-nav{
+}
+
+.product-categories-target:hover .product-category-nav {
   pointer-events: all;
   opacity: 1;
   visibility: visible;
@@ -403,17 +505,22 @@ body{
 }
 
 .multiline-ellipsis {
-  position: relative; /* Cho phép định vị phần tử con */
+  position: relative;
+  /* Cho phép định vị phần tử con */
   display: -webkit-box;
-  -webkit-line-clamp: 2;           /* Giới hạn 2 dòng */
-  -webkit-box-orient: vertical;    /* Hướng dọc */
+  -webkit-line-clamp: 2;
+  /* Giới hạn 2 dòng */
+  -webkit-box-orient: vertical;
+  /* Hướng dọc */
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
 }
-.ellipsis-1{
+
+.ellipsis-1 {
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Giới hạn 4 dòng */
+  -webkit-line-clamp: 1;
+  /* Giới hạn 4 dòng */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
