@@ -48529,7 +48529,6 @@ body.page-bg-image-lg {
    font-weight: bold;
 }
 
-  /* Responsive */
   @media only screen and (max-width: 768px) {
     table {
       width: 100%;

@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
+
+	//#region --------------------------Slick--------------------------
 	$('.single-item').slick({
 		arrows: false, // Tắt nút điều hướng mặc định
 		dots: false,
@@ -11,11 +13,6 @@ $(document).ready(function(){
 	$(".next").click(function () {
 		$('#banner').find(".single-item").slick("slickNext");
 	});
-
-
-	// ----------------------------------------------------------------
-
-
 
 	$('.product-cards').slick({
 		dots: true,
@@ -55,65 +52,6 @@ $(document).ready(function(){
 		]
 	});
 
-	$(document).ready(function () {
-        $("#menu-burger").click(function () {
-            let menuBar = $("#menu-bar");
-            if (menuBar.height() === 0) {
-                menuBar.height(50); // Mở rộng
-            } else {
-                menuBar.height(0); // Thu gọn
-            }
-		});
-
-		$(".open-menu").click(function () {
-			let menuBar = $("#menu-side");
-			let navMobile = $("#nav-mobile");
-		
-			if (menuBar.width() === 0) {
-				menuBar.width("100vw"); // Mở rộng menu
-			} else {
-				menuBar.width(0); // Thu gọn menu
-			}
-		
-			navMobile.toggleClass("d-none d-flex"); // Ẩn/hiện bằng cách thay đổi class
-		});
-		
-		
-		
-
-		let defaultGroup = $(".group-target").text();
-		let defaultTitle = $(".title-target").text();
-		let defaultDesc = $(".desc-target").text();
-
-		$(".solution-product").hover(
-			function () {
-				let newGroup = $(this).attr("group");
-				let newTitle = $(this).attr("title");
-				let newDesc = $(this).attr("desc");
-
-				$(".group-target, .title-target, .desc-target").addClass("fade");
-
-				setTimeout(() => {
-					$(".group-target").text(newGroup);
-					$(".title-target").text(newTitle);
-					$(".desc-target").text(newDesc);
-					$(".group-target, .title-target, .desc-target").removeClass("fade");
-				}, 300);
-			},
-			function () {
-				// Khi rời chuột khỏi phần tử
-				$(".group-target, .title-target, .desc-target").addClass("fade");
-
-				setTimeout(() => {
-					$(".group-target").text(defaultGroup);
-					$(".title-target").text(defaultTitle);
-					$(".desc-target").text(defaultDesc);
-					$(".group-target, .title-target, .desc-target").removeClass("fade");
-				}, 300);
-			}
-		);
-	});
-	
 	$('.centered-slide').slick({
 		centerMode: true, // Bật chế độ center
 		centerPadding: '60px', // Khoảng cách giữa các item
@@ -176,8 +114,6 @@ $(document).ready(function(){
 		]
 	});
 	
-
-
 	$('.related-post').slick({
 		centerMode: true, // Bật chế độ center
 		centerPadding: '60px', // Khoảng cách giữa các item
@@ -199,6 +135,68 @@ $(document).ready(function(){
 		  }
 		]
 	});
+	//#endregion
+
+	$("#menu-burger").click(function () {
+		let menuBar = $("#menu-bar");
+		if (menuBar.height() === 0) {
+			menuBar.height(50); // Mở rộng
+		} else {
+			menuBar.height(0); // Thu gọn
+		}
+	});
+
+	$(".open-menu").click(function () {
+		let menuBar = $("#menu-side");
+		let navMobile = $("#nav-mobile");
+	
+		if (menuBar.width() === 0) {
+			menuBar.width("100vw"); // Mở rộng menu
+		} else {
+			menuBar.width(0); // Thu gọn menu
+		}
+	
+		navMobile.toggleClass("d-none d-flex"); // Ẩn/hiện bằng cách thay đổi class
+	});
+	
+
+	let defaultGroup = $(".group-target").text();
+	let defaultTitle = $(".title-target").text();
+	let defaultDesc = $(".desc-target").text();
+
+	$(".solution-product").hover(
+		function () {
+			let newGroup = $(this).attr("group");
+			let newTitle = $(this).attr("title");
+			let newDesc = $(this).attr("desc");
+
+			$(".group-target, .title-target, .desc-target").addClass("fade");
+
+			setTimeout(() => {
+				$(".group-target").text(newGroup);
+				$(".title-target").text(newTitle);
+				$(".desc-target").text(newDesc);
+				$(".group-target, .title-target, .desc-target").removeClass("fade");
+			}, 300);
+		},
+		function () {
+			// Khi rời chuột khỏi phần tử
+			$(".group-target, .title-target, .desc-target").addClass("fade");
+
+			setTimeout(() => {
+				$(".group-target").text(defaultGroup);
+				$(".title-target").text(defaultTitle);
+				$(".desc-target").text(defaultDesc);
+				$(".group-target, .title-target, .desc-target").removeClass("fade");
+			}, 300);
+		}
+	);
+
+	$(".collection-menu").mouseenter(function () {
+		const key = $(this).attr("data-collection");
+		const data = getData(key);
+		$(".categories").html(renderCategories(data));
+    });
 	
 });
 
@@ -247,3 +245,56 @@ if(priceRange)
 }
 
 //#endregion
+
+
+
+const dataMap = {
+    camera: [
+        { title: "Title 1A", img: "image1A.jpg" },
+        { title: "Title 1B", img: "image1B.jpg" }
+    ],
+    internet: [
+        { title: "Router", img: "image2A.jpg" },
+        { title: "Switch", img: "image2B.jpg" },
+        { title: "Wifi", img: "image2C.jpg" }
+    ],
+    smartHome: [
+        { title: "Aquara", img: "image3A.jpg" },
+        { title: "Rạng đông", img: "image3A.jpg" },
+        { title: "Lumi", img: "image3A.jpg" },
+	],
+	doorLock: [
+        { title: "Khoá cửa đại sảnh", img: "image3A.jpg" },
+        { title: "Khoá cửa gỗ", img: "image3A.jpg" },
+        { title: "Khoá cửa nhôm", img: "image3A.jpg" },
+        { title: "Khoá cửa kính", img: "image3A.jpg" },
+        { title: "Khoá cửa khách sạn", img: "image3A.jpg" },
+	],
+	sound: [
+        { title: "Trường học", img: "image3A.jpg" },
+        { title: "Toà nhà", img: "image3A.jpg" },
+        { title: "Hội trường", img: "image3A.jpg" },
+    ],
+	onlineMeet: [
+        { title: "Màn hình led", img: "image3A.jpg" },
+        { title: "TV", img: "image3A.jpg" },
+        { title: "Phần mềm", img: "image3A.jpg" },
+    ]
+};
+
+function getData(key) {
+    return dataMap[key];
+}
+
+function renderCategories(data) {
+    return data.map(item => `
+        <div class="card-info position-relative">
+            <div class="overflow-hidden">
+                <img class="w-100" src="/Assest/media/600x600/img-1.jpg" alt="" srcset="">
+            </div>
+            <div class="project-info fs-3 py-2">
+                <h1 class="text-primary fs-3 title">${item.title}</h1>
+            </div>
+        </div>
+    `).join("");
+}
