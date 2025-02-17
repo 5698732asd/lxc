@@ -254,35 +254,48 @@ const dataMap = {
         { title: "Title 1B", img: "image1B.jpg" }
     ],
     internet: [
-        { title: "Router", img: "image2A.jpg" },
-        { title: "Switch", img: "image2B.jpg" },
-        { title: "Wifi", img: "image2C.jpg" }
+        { title: "Router", img: "/Assest/media/collection/network-device/1.png" },
+        { title: "Switch", img: "/Assest/media/collection/network-device/2.png" },
+        { title: "Wifi", img: "/Assest/media/collection/network-device/3.png" }
     ],
     smartHome: [
-        { title: "Aquara", img: "image3A.jpg" },
-        { title: "Rạng đông", img: "image3A.jpg" },
-        { title: "Lumi", img: "image3A.jpg" },
+        { title: "Aquara", img: "/Assest/media/collection/smart-home/1.png" },
+        { title: "Rạng đông", img: "/Assest/media/collection/smart-home/2.png" },
+        { title: "Lumi", img: "/Assest/media/collection/smart-home/3.png" },
+        { title: "Schineider", img: "/Assest/media/collection/smart-home/4.png" },
+        { title: "Vconnex", img: "/Assest/media/collection/smart-home/5.png" },
 	],
 	doorLock: [
-        { title: "Khoá cửa đại sảnh", img: "image3A.jpg" },
-        { title: "Khoá cửa gỗ", img: "image3A.jpg" },
-        { title: "Khoá cửa nhôm", img: "image3A.jpg" },
-        { title: "Khoá cửa kính", img: "image3A.jpg" },
-        { title: "Khoá cửa khách sạn", img: "image3A.jpg" },
+        { title: "Khoá cửa đại sảnh", img: "/Assest/media/collection/doorLock/1.png" },
+        { title: "Khoá cửa gỗ", img: "/Assest/media/collection/doorLock/2.png" },
+        { title: "Khoá cửa nhôm", img: "/Assest/media/collection/doorLock/3.png" },
+        { title: "Khoá cửa kính", img: "/Assest/media/collection/doorLock/4.png" },
+        { title: "Khoá cửa công", img: "/Assest/media/collection/doorLock/5.png" },
+        { title: "Khoá cửa khách sạn", img: "/Assest/media/collection/doorLock/6.png" },
+        { title: "Phụ kiện khóa cửa", img: "/Assest/media/collection/doorLock/7.png" },
 	],
 	sound: [
-        { title: "Trường học", img: "image3A.jpg" },
-        { title: "Toà nhà", img: "image3A.jpg" },
-        { title: "Hội trường", img: "image3A.jpg" },
+        { title: "Âm thanh trường học", img: "/Assest/media/collection/sound/1.png" },
+		{ title: "Âm thanh hội trường", img: "/Assest/media/collection/sound/2.png" },
+        { title: "Âm thanh toà nhà", img: "/Assest/media/collection/sound/3.png" },
+        { title: "Âm thanh bệnh viện", img: "/Assest/media/collection/sound/4.png" },
+        { title: "Âm thanh siêu thị", img: "/Assest/media/collection/sound/5.png" },
+        { title: "Âm thanh quán Cafe", img: "/Assest/media/collection/sound/6.png" },
+        
     ],
 	onlineMeet: [
-        { title: "Màn hình led", img: "image3A.jpg" },
-        { title: "TV", img: "image3A.jpg" },
-        { title: "Phần mềm", img: "image3A.jpg" },
+        { title: "Âm thanh phòng họp", img: "/Assest/media/collection/meeting-online/1.png" },
+        { title: "Màn hình led", img: "/Assest/media/collection/meeting-online/2.png" },
+        { title: "Màn hình ghép", img: "/Assest/media/collection/meeting-online/3.png" },
+        { title: "TV", img: "/Assest/media/collection/meeting-online/4.png" },
+        { title: "Phụ kiện phòng họp", img: "/Assest/media/collection/meeting-online/5.png" },
+        { title: "Camera hội nghị", img: "/Assest/media/collection/meeting-online/6.png" },
+        { title: "Phần mềm", img: "/Assest/media/collection/meeting-online/7.png" },
     ]
 };
 
 function getData(key) {
+	console.log(dataMap[key]);
     return dataMap[key];
 }
 
@@ -290,7 +303,7 @@ function renderCategories(data) {
     return data.map(item => `
         <div class="card-info position-relative">
             <div class="overflow-hidden">
-                <img class="w-100" src="/Assest/media/600x600/img-1.jpg" alt="" srcset="">
+                <img class="w-100" src="${item.img}" alt="" srcset="">
             </div>
             <div class="project-info fs-3 py-2">
                 <h1 class="text-primary fs-3 title">${item.title}</h1>
