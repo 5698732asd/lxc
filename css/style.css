@@ -505,9 +505,25 @@ body {
     gap: 25px;
   }
 
-}
+  .collection-menu{
+    border-top-left-radius: .5rem ;
+    border-bottom-left-radius: .5rem ;
+    padding: 1.5rem;
+    transition: background 0.3s;
+  }
+  .collection-menu:hover{
+    background: var(--bs-gray-100);
+    cursor: pointer;
+  }
+  
+  .collection{
+    padding: 1.5rem;
+    border-radius: .5rem ;
+  }
 
-.product-categories-target:hover .product-category-nav {
+
+} 
+.product-categories-target:hover .product-category-nav{
   pointer-events: all;
   opacity: 1;
   visibility: visible;
