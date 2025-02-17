@@ -34,7 +34,8 @@
 
     #main-image {
         max-width: calc(100% - 110px);
-        height: auto;
+        height: 500px;
+        object-fit: cover;
     }
 
     @media (max-width: 768px) {
