@@ -48562,4 +48562,8 @@ body.page-bg-image-lg {
   }
   .text-justify {
     text-align: justify;
-}
+  }
+  .text-custom-secondary
+  {
+    color: #fd8d27;;
+  }

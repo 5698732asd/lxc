@@ -38,14 +38,14 @@
     }
     /* Nút tăng / giảm */
     .quantity-editor button {
+        /* border: 1px solid #ddd; */
         width: 50px;
         height: 45px;
-        /* border: 1px solid #ddd; */
-        background-color: #ff9800; /* Màu cam */
+        background-color: var(--secondary);
         color: white;
         font-size: 18px;
         font-weight: bold;
-        border-radius: 6px; /* Bo góc nhẹ */
+        border-radius: 6px;
         cursor: pointer;
         transition: all 0.3s ease;
         display: flex;
