@@ -250,8 +250,11 @@ if(priceRange)
 
 const dataMap = {
     camera: [
-        { title: "Title 1A", img: "image1A.jpg" },
-        { title: "Title 1B", img: "image1B.jpg" }
+        { title: "Camera Wifi", img: "/Assest/media/collection/camera/1.png" },
+        { title: "Camera IP", img: "/Assest/media/collection/camera/2.png" },
+        { title: "Camera Analog", img: "/Assest/media/collection/camera/3.png" },
+        { title: "Đầu ghi hình", img: "/Assest/media/collection/camera/4.png" },
+        { title: "Phụ kiện", img: "/Assest/media/collection/camera/5.jpg" }
     ],
     internet: [
         { title: "Router", img: "/Assest/media/collection/network-device/1.png" },
