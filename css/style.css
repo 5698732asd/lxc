@@ -197,49 +197,58 @@ body {
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
+
 .card-blog-home {
   display: flex;
   flex-direction: column;
-  height: 380px; 
-  background: #fff; 
-  border: none; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  border-radius: 0.5rem; 
-  transition: box-shadow 0.3s ease; 
+  height: 380px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
   padding: 10px;
   overflow: hidden;
 }
 
 .card-blog-home:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card-blog-home-img {
   width: 100%;
-  height: 200px; 
-  object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-blog-home-body {
-  flex: 1; /* chiếm hết chiều cao còn lại */
+  flex: 1;
+  /* chiếm hết chiều cao còn lại */
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 /* Giới hạn blog-title và blog-desc hiển thị 2 dòng */
-.blog-title, .blog-desc {
-  display: -webkit-box;          /* Sử dụng flexbox ẩn bớt chữ */
-  -webkit-line-clamp: 2;         /* Chỉ hiển thị tối đa 2 dòng */
-  -webkit-box-orient: vertical;  /* Hướng hộp dọc (vertical) */
+.blog-title,
+.blog-desc {
+  display: -webkit-box;
+  /* Sử dụng flexbox ẩn bớt chữ */
+  -webkit-line-clamp: 2;
+  /* Chỉ hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical;
+  /* Hướng hộp dọc (vertical) */
   overflow: hidden;
-  text-overflow: ellipsis;       /* Thêm dấu '...' */
-  margin-bottom: 0.5rem;         /* Khoảng cách giữa các đoạn */
+  text-overflow: ellipsis;
+  /* Thêm dấu '...' */
+  margin-bottom: 0.5rem;
+  /* Khoảng cách giữa các đoạn */
 }
 
 /* Phóng to chữ "Tìm hiểu thêm" */
 .read-more a {
-  font-size: 1.5rem;    /* Chỉnh font-size to hơn (tùy ý) */
+  font-size: 1.5rem;
+  /* Chỉnh font-size to hơn (tùy ý) */
   color: #1a73e8;
   text-decoration: none;
   font-weight: 500;
@@ -483,8 +492,8 @@ body {
   top: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   transform: translateY(20px);
-  opacity: 1;
-  /* opacity: 0;  */
+  /* opacity: 1; */
+  opacity: 0;
   transition: all ease .5s;
   pointer-events: none;
 
@@ -524,4 +533,32 @@ body {
   /* Giới hạn 4 dòng */
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.info-about-us-home {
+  .custom-title {
+    font-size: 2.5rem;
+    /* chữ to hơn */
+    font-weight: bold;
+  }
+
+  .custom-desc {
+    font-size: 1.25rem;
+  }
+
+  .product-group {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* đảm bảo không có khoảng trống thừa */
+  }
+
+  .divider {
+    height: 1px;
+    background: #ddd;
+    /* màu xám nhạt cho đường kẻ */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
