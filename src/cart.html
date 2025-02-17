@@ -83,7 +83,10 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-start">
+                                    <td class="text-start d-flex">
+										<div class="w-100px d-flex flex-center cursor-pointer" onclick="this.closest('tr').remove()">
+											<i class="fi fi-rr-trash text-danger fs-2tx"></i>
+										</div>
                                         <img src="../Assest/media/product/sp-1.jpg" class="product-img" alt="Thermometer"> Khóa vân tay thông minh DL10
                                     </td>
                                     <td>5.990.000 ₫</td>
@@ -97,7 +100,10 @@
                                     <td class="text-end">5.990.000 ₫</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">
+                                    <td class="text-start d-flex">
+										<div class="w-100px d-flex flex-center cursor-pointer" onclick="this.closest('tr').remove()">
+											<i class="fi fi-rr-trash text-danger fs-2tx"></i>
+										</div>
                                         <img src="../Assest/media/product/sp-2.png" class="product-img" alt="Thermometer"> 
 										Khóa cửa thông minh DAHUA DHI-ASL8212R-B/S-B
                                     </td>
@@ -112,7 +118,10 @@
                                     <td class="text-end">7.324.000 ₫</td>
                                 </tr>
 								<tr>
-                                    <td class="text-start">
+                                    <td class="text-start d-flex">
+										<div class="w-100px d-flex flex-center cursor-pointer" onclick="this.closest('tr').remove()">
+											<i class="fi fi-rr-trash text-danger fs-2tx"></i>
+										</div>
                                         <img src="../Assest/media/product/sp-3.png" class="product-img" alt="Thermometer"> 
 										Khóa cửa cho căn hộ, nhà phố PHGLOCK KR7153 (Bạc)
                                     </td>
@@ -133,15 +142,15 @@
                                     <td class="pt-0 mt-0">
                                         <table style="width: 100%;">
                                             <tr>
-                                                <td class="text-start fs-1">TẠM TÍNH :</td>
+                                                <td class="text-start fs-1 fw-bold">TẠM TÍNH :</td>
                                                 <td class="text-end fs-1">16.164.000 đ</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-start fs-1">TỔNG :</td>
+                                                <td class="text-start fs-1 fw-bold">TỔNG :</td>
                                                 <td class="text-end fs-1">16.164.000 đ</td>
                                             </tr>
                                         </table>
-                                        <button class="btn btn-checkout w-100 mt-5">Thanh toán</button>
+                                        <button class="orange-btn-fill rounded-pill w-100 mt-5">Thanh toán</button>
                                         <a href="#" class="d-block text-center mt-2">Tiếp tục mua thêm</a>
                                     </td>
                                 </tr>
@@ -203,4 +212,12 @@
 <script type="text/javascript" src="/js/admin.js"></script>
 <script type="text/javascript" src="/js/product.js"></script>
 
+<script>
+	function remove(button)
+	{	
+		button.closest('tr').remove();
+	}
+</script>
+
 </html>
+
