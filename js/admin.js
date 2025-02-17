@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	$("#menu-bar").height(50)
 
 	//#region --------------------------Slick--------------------------
 	$('.single-item').slick({
@@ -194,6 +195,10 @@ $(document).ready(function () {
 
 	$(".collection-menu").mouseenter(function () {
 		const key = $(this).attr("data-collection");
+		document.querySelectorAll(".collection-menu").forEach(function (item) {
+			item.setAttribute('class','collection-menu')
+		  })
+		$(this).addClass('bg-gray-200')
 		const data = getData(key);
 		$(".categories").html(renderCategories(data));
     });
@@ -304,13 +309,15 @@ function getData(key) {
 
 function renderCategories(data) {
     return data.map(item => `
-        <div class="card-info position-relative">
-            <div class="overflow-hidden">
-                <img class="w-100" src="${item.img}" alt="" srcset="">
-            </div>
-            <div class="project-info fs-3 py-2">
-                <h1 class="text-primary fs-3 title">${item.title}</h1>
-            </div>
-        </div>
+        <a href="/src/listProduct.html">
+			<div class="card-info position-relative border border-1 py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+				<div class="overflow-hidden">
+					<img class="w-100" src="${item.img}" alt="" srcset="">
+				</div>
+				<div class="project-info fs-3 py-2">
+					<h1 class="text-primary fs-3 title">${item.title}</h1>
+				</div>
+			</div>
+		</a>
     `).join("");
 }

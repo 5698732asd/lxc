@@ -23,39 +23,309 @@
 </head>
 
 <body>
-	<div class="sticky-top bg-white shadow-sm d-none d-lg-block">
-		<div class="container d-flex">
-			<div id="logo" class="w-25 d-flex justify-content-between align-items-center">
-				<img class="w-75" src="../Assest/lxc-dark.png" alt="">
-				<a href="javascript:void(0);" id="menu-burger">
-					<i class="fi fi-rr-menu-burger fs-1 text-primary"></i>
-				</a>
-			</div>
-			<div id="logo" class="w-50 px-10 d-flex flex-center">
-				<input class="form-control" type="text">
-			</div>
-			<div id="logo" class="w-25 d-flex flex-center justify-content-between fs-4">
-				<div class="">Language</div>
-				<div class="">Currency</div>
-				<div class=""><i class="fi fi-rr-heart fs-3"></i></div>
-				<div class=""><i class="fi fi-rr-user fs-3"></i></div>
-				<div class=""><a href="/src/cart.html"><i class="fi fi-rr-shopping-cart fs-3"></i></a></div>
-			</div>
+    <div class="sticky-top bg-white shadow-sm d-none d-lg-block">
+        <div class="container d-flex position-relative">
+            <div id="logo" class="w-25 d-flex justify-content-between align-items-center">
+                <a href="/Index.html">
+                    <img class="w-75" src="/Assest/lxc-dark.png" alt="" />
+                </a>
+                <a href="javascript:void(0);" id="menu-burger">
+                    <i class="fi fi-rr-menu-burger fs-1 text-primary"></i>
+                </a>
+            </div>
+            <div id="logo" class="w-50 px-10 d-flex flex-center">
+                <div class="w-100 position-relative">
+                    <input class="form-control w-100" type="text" placeholder="Tìm kiếm ..." />
+                    <i class="fi fi-rr-search fs-3 position-absolute top-25 end-0 me-5"></i>
+                </div>
+            </div>
+            <div id="logo" class="w-25 d-flex align-items-center gap-2 fs-4">
+                <div class="">
+                    <i class="fi fi-rr-phone-call pe-3 fs-fluid"></i> 088
+                    6568 444
+                </div>
+                <!-- <div class=""><i class="fi fi-rr-heart fs-3"></i></div>
+					<div class=""><i class="fi fi-rr-user fs-3"></i></div> -->
+                <div class="cart position-relative w-50px text-end">
+                    <a href="/src/cart.html">
+                        <i class="fi fi-rr-shopping-cart fs-1"></i>
+                    </a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        5
+                        <span class="visually-hidden">Số lượng sản phẩm trong giỏ hàng</span>
+                    </span>
+                    <div class="cart-view text-start">
+                        <div class="d-flex p-10 flex-column gap-5">
+                            <div class="cart-items w-100 d-flex flex-column gap-5 mh-500px overflow-scroll">
+                                <div class="h-100px w-100 d-flex gap-5">
+                                    <div class="">
+                                        <img class="h-100 rounded-1" src="Assest/media/product/sp-1.jpg" alt=""
+                                            srcset="" />
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-primary">
+                                            Khóa vân tay thông minh DL10
+                                        </h2>
+                                        <h3 class="text-orange">
+                                            5.990.000 ₫
+                                        </h3>
+                                    </div>
+                                    <div class="ms-auto fs-2">x</div>
+                                </div>
+                                <!-- <div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/media/product/sp-2.png" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Khóa cửa thông minh DAHUA DHI-ASL8212R-B/S-B</h2>
+										<h3 class="text-orange">7.324.000 ₫</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/media/product/sp-3.png" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Khóa cửa cho căn hộ, nhà phố PHGLOCK KR7153 (Bạc)</h2>
+										<h3 class="text-orange">2.850.000 ₫</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div> -->
+                            </div>
+                            <div class="total w-100 d-flex">
+                                <div class="fw-bold fs-3 text-primary">
+                                    Tổng tiền
+                                </div>
+                                <div class="ms-auto fw-bold fs-3 text-primary">
+                                    16.164.000 đ
+                                </div>
+                            </div>
+                            <div class="cart-actions w-100">
+                                <button class="orange-btn rounded-pill w-100">
+                                    Xem giỏ hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div id="menu-bar" class="container d-flex justify-content-between align-items-center gap-5 ">
+			<div class="flex-grow-1 align-items-center h-100 d-flex gap-10 fs-3 fw-bold text-uppercase">
+                <a href="/">Trang chủ</a>
+                <div class="product-categories-target h-100 d-flex align-items-center">
+                    <a href="/src/ListProduct.html">Sản phẩm</a>
+                    <div class="product-category-nav">
+                        <div class="container py-10 d-flex">
+							<div class="h-100 flex-grow-1 d-flex flex-column min-w-300px fs-3">
+								<div class="collection-menu" data-collection="camera">Camera</div>
+								<div class="collection-menu" data-collection="internet">Thiết bị mạng</div>
+								<div class="collection-menu" data-collection="smartHome">Thiết bị SmartHome</div>
+								<div class="collection-menu" data-collection="doorLock">Khoá cửa thông minh</div>
+								<div class="collection-menu" data-collection="sound">Hệ thống âm thanh</div> 
+								<div class="collection-menu" data-collection="onlineMeet">Thiết bị họp trực tuyến</div>
+							</div>
+							<div class="categories w-100 collection">
+								<div class="card-info position-relative">
+									<div class="overflow-hidden">
+										<img class="w-100" src="/Assest/media/collection/camera/1.png" alt="" srcset="">
+									</div>
+									<div class="project-info fs-3 py-2">
+										<h1 class="text-primary fs-3 title">Camera Wifi</h1>
+									</div>
+								</div>
+								<div class="card-info position-relative">
+									<div class="overflow-hidden">
+										<img class="w-100" src="/Assest/media/collection/camera/2.png" alt="" srcset="">
+									</div>
+									<div class="project-info fs-3 py-2">
+										<h1 class="text-primary fs-3 title">Camera IP</h1>
+									</div>
+								</div>
+								<div class="card-info position-relative">
+									<div class="overflow-hidden">
+										<img class="w-100" src="/Assest/media/collection/camera/3.png" alt="" srcset="">
+									</div>
+									<div class="project-info fs-3 py-2">
+										<h1 class="text-primary fs-3 title">Camera Analog</h1>
+									</div>
+								</div>
+								<div class="card-info position-relative">
+									<div class="overflow-hidden">
+										<img class="w-100" src="/Assest/media/collection/camera/4.png" alt="" srcset="">
+									</div>
+									<div class="project-info fs-3 py-2">
+										<h1 class="text-primary fs-3 title">Đầu ghi hình</h1>
+									</div>
+								</div>
+								<div class="card-info position-relative">
+									<div class="overflow-hidden">
+										<img class="w-100" src="/Assest/media/collection/camera/5.jpg" alt="" srcset="">
+									</div>
+									<div class="project-info fs-3 py-2">
+										<h1 class="text-primary fs-3 title">Phụ kiện</h1>
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/blog/blog.html">Bài viết</a>
+                <a href="/src/project.html">Dự án</a>
+                <a href="/src/contact.html">Liên hệ</a>
+                <a href="/src/about.html">Về chúng tôi</a>
+            </div>
+			<!-- <div class="d-flex flex-center text-gray-600 fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			</div> -->
 		</div>
-		<div class="separator"></div>
-		<div id="menu-bar" class="container d-flex justify-content-between align-items-center">
-			<div class="flex-grow-1 d-flex gap-5 fs-4 fw-bold">
-				<a href="/src/ListProduct.html">Thiết bị Camera</a>
-				<a href="#">Thiết bị Camera</a>
-				<a href="#">Thiết bị Camera</a>
-				<a href="#">Thiết bị Camera</a>
-				<a href="#">Thiết bị Camera</a>
-				<a href="#">Thiết bị Camera</a>
-			</div>
-			<div class="d-flex flex-center text-gray-600 fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+    <div id="nav-mobile" class="sticky-top bg-white shadow-sm d-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="/Index.html">
+                    <img class="w-200px" src="../Assest/lxc-dark.png" alt="" />
+                </a>
+                <i class="fi fi-rr-search fs-3tx text-primary"></i>
+            </div>
+        </div>
+    </div>
+
+	<div id="menu-side">
+		<div class="menu-content">
+			<div class="accordion accordion-icon-toggle">
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/">
+						Trang chủ
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#productCollection">
+						Sản phẩm
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="productCollection">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#camera">
+							Camera 
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#network">
+							Thiết bị mạng 
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#smarthome">
+							Thiết bị SmartHome
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#doorLock">
+							Khóa cửa thông minh
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sound">
+							Hệ thống âm thanh 
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#meeting">
+							Thiết bị họp trực tuyến
+						</a>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/blog/blog.html">
+						Bài viết
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/src/project.html">
+						Dự án
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/src/contact.html">
+						Liên hệ
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/src/about.html">
+						Về chúng tôi
+					</a>
+				</div>
+				<!-- <div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#fashion">
+						Fashion
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="fashion">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#menswear">
+							Menswear
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="menswear">
+							<a class="list-group-item list-group-item-action">Shirts</a>
+							<a class="list-group-item list-group-item-action">Trousers</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#womenswear">
+							Womenswear
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="womenswear">
+							<a class="list-group-item list-group-item-action">Dresses</a>
+							<a class="list-group-item list-group-item-action">Tops</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#beauty">
+						Beauty & Health
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="beauty">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#skincare">
+							Skincare
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="skincare">
+							<a class="list-group-item list-group-item-action">Moisturizer</a>
+							<a class="list-group-item list-group-item-action">Sunscreen</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#makeup">
+							Makeup
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="makeup">
+							<a class="list-group-item list-group-item-action">Foundation</a>
+							<a class="list-group-item list-group-item-action">Lipstick</a>
+						</div>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
+
+    <div id="footer-nav"
+        class="d-lg-none d-flex position-fixed px-4 py-5 bottom-0 bg-white border-top shadow z-index-3 justify-content-around">
+        <div class="open-menu">
+            <i class="fi fi-rr-menu-burger fs-2x"></i>
+        </div>
+        <div class="">
+            <i class="fi fi-rr-house-chimney fs-2x"></i>
+        </div>
+         
+        <div class="">
+            <i class="fi fi-rr-user fs-2x"></i>
+        </div>
+         <div class="position-relative">
+			<div class="">
+				<i class="fi fi-rr-shopping-cart fs-2x"></i>
+			</div>
+			<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+				5
+				<span class="visually-hidden">Số lượng sản phẩm trong giỏ hàng</span>
+			</span>
+		</div>
+    </div>
     <section class="contact container py-3">
         <div class="row mt-5 gy-4"> 
             <!-- Thanh điều hướng -->

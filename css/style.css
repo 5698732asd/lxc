@@ -511,10 +511,10 @@ body {
     padding: 1.5rem;
     transition: background 0.3s;
   }
-  .collection-menu:hover{
+  /* .collection-menu:hover{
     background: var(--bs-gray-100);
     cursor: pointer;
-  }
+  } */
   
   .collection{
     padding: 1.5rem;
@@ -528,7 +528,15 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+
 }
+.product-categories-target i{
+  transition: all ease-in-out .3s;
+}
+.product-categories-target:hover i{
+  transform: rotate(180deg);
+  /* display: none; */
+} 
 
 .multiline-ellipsis {
   position: relative;
