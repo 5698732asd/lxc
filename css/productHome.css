@@ -1,4 +1,7 @@
 .product-home {
+    :root {
+      --secondary: #fd8d27;
+    }
     .card.fixed-card {
       display: flex;
       flex-direction: column;
@@ -62,9 +65,9 @@
     }
   
     .product-categories .nav-link.active {
-      background-color: #007bff;
+      background-color: var(--secondary);
       color: #fff;
-      border: 1px solid #007bff;
+      border: 1px solid var(--secondary);
     }
   
     @media (max-width: 576px) {
