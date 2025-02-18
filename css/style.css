@@ -586,16 +586,21 @@ body {
     padding: 0;
   }
 }
-@media (max-width: 576px) {
-  .address-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .address-container img {
-    max-width: 150px;
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
+/* Mặc định cho PC */
+.address-container img {
+  max-width: 75px;
 }
 
+/* Trên mobile (<576px) */
+@media (max-width: 576px) {
+  .address-container {
+    flex-direction: column;  /* Xếp theo cột */
+    align-items: center;     /* Căn giữa các phần tử */
+    text-align: center;      /* Căn giữa văn bản */
+  }
+  .address-container img {
+    max-width: 150px;        /* Tăng kích thước logo trên mobile */
+    margin-bottom: 10px;     /* Khoảng cách giữa logo và văn bản */
+    margin-right: 0;         /* Loại bỏ margin bên phải */
+  }
+}
