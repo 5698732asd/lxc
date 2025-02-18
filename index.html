@@ -737,7 +737,7 @@
                 <!-- Header animate (tùy chọn) -->
                 <div
                     class="text-center mb-5 wow fadeInDown"
-                    data-wow-duration="2s"
+                    data-wow-duration="3s"  data-wow-offset="400"
                 >
                     <div class="fs-3 text-warning">An ninh nhà thông minh</div>
                     <h2 class="display-4 custom-title">
@@ -752,7 +752,7 @@
                 <!-- Sản phẩm 1: Text bên trái, ảnh bên phải (animate toàn bộ từ bên trái) -->
                 <div
                     class="product-group wow slideInLeft"
-                    data-wow-duration="2s"
+                    data-wow-duration="3s"  data-wow-offset="400"
                 >
                     <div class="row align-items-center g-0">
                         <div class="col-md-6">
@@ -781,7 +781,7 @@
                 <!-- Sản phẩm 2: Ảnh bên trái, text bên phải (animate toàn bộ từ bên phải) -->
                 <div
                     class="product-group wow slideInRight"
-                    data-wow-duration="2s"
+                    data-wow-duration="3s"  data-wow-offset="400"
                 >
                     <div class="row align-items-center g-0">
                         <div class="col-md-6 order-md-1 order-2">
@@ -811,7 +811,7 @@
                 <!-- Sản phẩm 3: Text bên trái, ảnh bên phải (animate toàn bộ từ bên trái) -->
                 <div
                     class="product-group wow slideInLeft"
-                    data-wow-duration="2s"
+                    data-wow-duration="3s"  data-wow-offset="400"
                 >
                     <div class="row align-items-center g-0">
                         <div class="col-md-6">
@@ -840,7 +840,7 @@
                 <!-- Sản phẩm 4: Ảnh bên trái, text bên phải (animate toàn bộ từ bên phải) -->
                 <div
                     class="product-group wow slideInRight"
-                    data-wow-duration="2s"
+                    data-wow-duration="3s"  data-wow-offset="400"
                 >
                     <div class="row align-items-center g-0">
                         <div class="col-md-6 order-md-1 order-2">
@@ -1461,6 +1461,10 @@
     <script type="text/javascript" src="/js/admin.js"></script>
     <script type="text/javascript" src="/js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        if (window.innerWidth > 768) {  // 768px is an example breakpoint (điểm ngắt)
+            new WOW({
+                offset: 400  // (khoảng cách kích hoạt)
+            }).init();
+        }
     </script>
 </html>
