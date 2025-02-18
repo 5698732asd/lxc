@@ -318,9 +318,10 @@ function getData(key) {
 }
 
 function renderCategories(data) {
-    return data.map(item => `
-        <a href="/src/ListProduct.html">
-			<div class="card-info position-relative py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+	return data.map((item, index) => `
+		<a href="/src/ListProduct.html">
+			<div class="card-info position-relative py-2 px-4"
+				 style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
 				<div class="overflow-hidden">
 					<img class="w-100" src="${item.img}" alt="" srcset="">
 				</div>
@@ -329,5 +330,5 @@ function renderCategories(data) {
 				</div>
 			</div>
 		</a>
-    `).join("");
+	`).join("");
 }
