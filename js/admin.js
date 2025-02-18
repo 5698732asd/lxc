@@ -159,6 +159,16 @@ $(document).ready(function () {
 	
 		navMobile.toggleClass("d-none d-flex"); // Ẩn/hiện bằng cách thay đổi class
 	});
+
+	$("#mobile-search").click(function () {
+		let searchBar = $("#mobile-search-bar");
+		if (searchBar.height() === 0) {
+			searchBar.height(50);
+			searchBar.find("input").focus()
+		} else {
+			searchBar.height(0);
+		}
+	});
 	
 
 	let defaultGroup = $(".group-target").text();
