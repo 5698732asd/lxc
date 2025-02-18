@@ -611,3 +611,15 @@ body {
     animation-name: none !important;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .wow {
+    visibility: visible !important;
+    animation-name: none !important;
+  }
+}
+
+#mobile-search-bar{
+  transition: height ease-out .5s;
+  height: 0px;
+}
